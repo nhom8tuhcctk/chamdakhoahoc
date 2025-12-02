@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* hồng nhạt */
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+header {
+    background-color: #ffb6d9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+h2 {
+    color: #ff4da6;
+}
+
+.step {
+    background: #ffe6f7;
+    padding: 15px;
+    border-left: 5px solid #ff4da6;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ffb6d9;
+    margin-top: 40px;
+    color: white;
+}
