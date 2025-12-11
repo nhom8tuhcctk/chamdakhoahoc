@@ -6,73 +6,422 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO cơ bản -->
-    <meta name="description" content="Chăm Da Khoa Học chia sẻ kiến thức skincare cơ bản, routine sáng – tối, hàng rào bảo vệ da và cách chọn sản phẩm phù hợp cho người mới bắt đầu.">
-    <meta name="keywords" content="chăm da khoa học, skincare cơ bản, routine skincare, hàng rào bảo vệ da, chăm sóc da cho người mới">
+    <meta name="description" content="Chăm Da Khoa Học chia sẻ kiến thức chăm sóc da khoa học cho người mới bắt đầu: phân biệt loại da, routine sáng tối, phục hồi hàng rào bảo vệ da và tránh các sai lầm skincare thường gặp.">
+    <meta name="keywords" content="chăm da khoa học, chăm sóc da cơ bản, skincare cho người mới, routine sáng tối, hàng rào bảo vệ da, sai lầm chăm sóc da">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="https://nhom8tuhcctk.github.io/chamdakhoahoc/">
 
     <!-- Google Search Console -->
-    <meta name="google-site-verification" content="td3gp0ebjPeyJ-wn-ZEuKxO-C9NCuemqSMgt-WYbhzQ">
+    <meta name="google-site-verification" content="td3gp0ebjPeyJ-wn-ZEuKxO-C9NCuemqSMgt-WYbhzQ" />
 
     <style>
-        /* Toàn bộ phần CSS cũ của em trong index.html để nguyên ở đây */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: "Segoe UI", Arial, sans-serif;
         }
+
         body {
             background-color: #fff9fb;
             color: #333;
             display: flex;
         }
-        /* ... (giữ nguyên các style còn lại của em) ... */
+
+        /* SIDEBAR MENU DỌC */
+        .sidebar {
+            width: 230px;
+            background: #ff99c8;
+            min-height: 100vh;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            color: #ffeaf6;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .sidebar nav a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .sidebar nav a:hover,
+        .sidebar nav a.active {
+            background: #ff7ab5;
+        }
+
+        .sidebar small {
+            display: block;
+            margin-top: 10px;
+            color: #ffeaf6;
+            font-size: 0.8rem;
+        }
+
+        /* PHẦN NỘI DUNG CHÍNH */
+        .content {
+            flex: 1;
+            padding: 20px 40px;
+        }
+
+        header {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ffd1e6;
+            padding-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #ff4f9a;
+        }
+
+        header p {
+            margin-top: 5px;
+            color: #666;
+        }
+
+        /* SECTION CHUNG */
+        .section-block {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ffd1e6;
+        }
+
+        .section-block h2 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #ff4f9a;
+        }
+
+        .section-block p {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .section-block ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section-block li {
+            margin-bottom: 5px;
+        }
+
+        /* GRID BOXES */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .box {
+            background: #ffeef6;
+            border-radius: 12px;
+            padding: 12px 14px;
+            border: 1px solid #ffd1e6;
+        }
+
+        .box h3 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: #ff4f9a;
+        }
+
+        .box p {
+            font-size: 0.95rem;
+        }
+
+        .box ul {
+            margin-left: 18px;
+            margin-top: 5px;
+        }
+
+        .box li {
+            margin-bottom: 4px;
+        }
+
+        /* DANH SÁCH BÀI VIẾT */
+        .post-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .post-card {
+            background: #ffeef6;
+            border-radius: 12px;
+            padding: 12px 14px;
+            border: 1px solid #ffd1e6;
+        }
+
+        .post-card h3 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .post-card p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            padding: 8px 14px;
+            background: #ff84b7;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background: #ff5fa1;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: #ffeef6;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #ffd1e6;
+            max-width: 500px;
+        }
+
+        .contact-box .form-group {
+            margin-bottom: 10px;
+        }
+
+        .contact-box label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 7px 9px;
+            border-radius: 8px;
+            border: 1px solid #ffbad8;
+            font-size: 0.9rem;
+        }
+
+        .contact-box textarea {
+            min-height: 80px;
+        }
+
+        .contact-box button {
+            margin-top: 6px;
+            padding: 8px 14px;
+            border-radius: 18px;
+            border: none;
+            cursor: pointer;
+            background: #ff84b7;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .contact-box button:hover {
+            background: #ff5fa1;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #777;
+            padding-top: 10px;
+            border-top: 1px solid #ffd1e6;
+        }
+
+        footer a {
+            color: #ff4f9a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: static;
+                min-height: auto;
+                border-bottom: 1px solid #ffd1e6;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+
+        /* ẨN/HIỆN SECTION THEO MENU (tùy chọn) */
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
-
     <!-- SIDEBAR MENU -->
-    <div class="sidebar">
-        <div class="logo">Chăm Da Khoa Học</div>
-        <ul>
-            <!-- Trang chủ: hiện tất cả các mục -->
-            <li><a href="#" data-section="home" class="active">🏠 Trang chủ</a></li>
-            <li><a href="#" data-section="basic">📘 Cơ bản</a></li>
-            <li><a href="#" data-section="routine">✨ Routine</a></li>
-            <li><a href="#" data-section="ingredients">🔬 Thành phần</a></li>
-            <li><a href="#" data-section="contact">📩 Liên hệ</a></li>
-        </ul>
-    </div>
+    <aside class="sidebar">
+        <h2>Chăm Da Khoa Học</h2>
+        <p>Nơi tổng hợp kiến thức skincare dễ hiểu, khoa học, phù hợp cho người mới bắt đầu.</p>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+        <nav>
+            <a href="#tongquan" class="active">Tổng quan</a>
+            <a href="#coban">Cơ bản</a>
+            <a href="#routine">Routine gợi ý</a>
+            <a href="#hangrao">Hàng rào bảo vệ da</a>
+            <a href="#sailam">Sai lầm thường gặp</a>
+            <a href="#lienhe">Liên hệ</a>
+        </nav>
 
-        <!-- PHẦN TRANG CHỦ (HERO) -->
-        <section id="home" class="section-block">
-            <div class="hero">
-                <div class="hero-left">
-                    <h1>Chăm da dựa trên khoa học ✨</h1>
-                    <p>
-                        Website chia sẻ kiến thức chăm sóc da dựa trên nghiên cứu khoa học:
-                        hiểu làn da, chọn sản phẩm phù hợp và xây routine thông minh – không chạy theo quảng cáo.
-                    </p>
+        <small>Website phục vụ mục đích học tập & chia sẻ kiến thức, không thay thế tư vấn y khoa.</small>
+    </aside>
+
+    <!-- NỘI DUNG CHÍNH -->
+    <main class="content">
+        <header>
+            <h1>Chăm Da Khoa Học</h1>
+            <p>Trang tổng hợp kiến thức chăm sóc da cơ bản – phù hợp cho người mới bắt đầu skincare.</p>
+        </header>
+
+        <!-- PHẦN TỔNG QUAN -->
+        <section id="tongquan" class="section-block">
+            <h2>1. Vì sao cần chăm da khoa học?</h2>
+            <p>
+                Skincare không chỉ là “dưỡng da cho đẹp” mà là cách bảo vệ làn da trước môi trường, ánh nắng,
+                bụi bẩn và lão hóa. Khi hiểu đúng về da và sản phẩm, bạn sẽ:
+            </p>
+            <ul>
+                <li>Tránh lãng phí tiền vào sản phẩm không phù hợp.</li>
+                <li>Giảm nguy cơ kích ứng, nổi mụn do dùng sai cách.</li>
+                <li>Xây dựng được routine đơn giản, tiết kiệm nhưng hiệu quả lâu dài.</li>
+            </ul>
+
+            <div class="grid">
+                <div class="box">
+                    <h3>Hiểu làn da của mình</h3>
+                    <p>Biết mình là da dầu, khô, hỗn hợp hay nhạy cảm giúp chọn sản phẩm dễ hơn nhiều.</p>
                 </div>
-                <div class="hero-right">
-                   <img src="01.jpg" alt="ảnh skincare 01">
-                   <img src="02.jpg" alt="ảnh skincare 02">
+                <div class="box">
+                    <h3>Không chạy theo trend</h3>
+                    <p>Mỗi làn da sẽ có nhu cầu khác nhau, không phải sản phẩm hot nào cũng phù hợp.</p>
+                </div>
+                <div class="box">
+                    <h3>Xây routine rõ ràng</h3>
+                    <p>Ưu tiên: làm sạch – dưỡng ẩm – chống nắng, sau đó mới tới treatment.</p>
                 </div>
             </div>
         </section>
 
         <!-- PHẦN CƠ BẢN -->
-        <section id="basic" class="section-block">
-            <h2>Kiến thức chăm sóc da cơ bản</h2>
+        <section id="coban" class="section-block">
+            <h2>2. Cơ bản về chăm sóc da cho người mới</h2>
             <p>
-                Phần dành cho người mới bắt đầu: hiểu loại da, routine tối giản
-                và những bước quan trọng nhất để da khỏe lâu dài.
+                Nếu bạn là người mới bắt đầu, hãy bắt đầu từ những kiến thức nền tảng:
+                hiểu loại da, biết các bước chăm sóc da cơ bản và những sai lầm nên tránh.
             </p>
+
+            <div class="grid">
+                <div class="box">
+                    <h3>2.1. Phân biệt các loại da</h3>
+                    <p>Cách nhận biết da dầu, da khô, da hỗn hợp, da nhạy cảm bằng các dấu hiệu đơn giản.</p>
+                    <ul>
+                        <li>Quan sát da sau khi rửa mặt 2–3 giờ.</li>
+                        <li>Để ý cảm giác căng khô, đổ dầu hay châm chích.</li>
+                    </ul>
+                    <a href="basic-phan-biet-loai-da.html" class="btn">Xem chi tiết</a>
+                </div>
+
+                <div class="box">
+                    <h3>2.2. Các bước chăm sóc da cơ bản</h3>
+                    <p>Routine cơ bản thường gồm 3–4 bước:</p>
+                    <ul>
+                        <li>Làm sạch (tẩy trang, sữa rửa mặt).</li>
+                        <li>Dưỡng ẩm (serum/kem dưỡng).</li>
+                        <li>Chống nắng (ban ngày).</li>
+                        <li>Thêm treatment nếu cần (trị mụn, thâm,...).</li>
+                    </ul>
+                    <a href="basic-cham-soc-co-ban.html" class="btn">Hướng dẫn chi tiết</a>
+                </div>
+
+                <div class="box">
+                    <h3>2.3. Routine sáng – tối mẫu</h3>
+                    <p>Gợi ý routine sáng – tối đơn giản cho người đi học, đi làm bận rộn.</p>
+                    <a href="basic-routine-sang-toi.html" class="btn">Tham khảo routine</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN HÀNG RÀO BẢO VỆ DA -->
+        <section id="hangrao" class="section-block">
+            <h2>3. Hàng rào bảo vệ da (skin barrier)</h2>
+            <p>
+                Hàng rào bảo vệ da (skin barrier) giống như “tường thành” giữ ẩm và bảo vệ da khỏi tác nhân bên ngoài.
+                Khi barrier khỏe, da sẽ ít kích ứng và phục hồi nhanh hơn.
+            </p>
+
+            <div class="grid">
+                <div class="box">
+                    <h3>3.1. Dấu hiệu barrier bị tổn thương</h3>
+                    <ul>
+                        <li>Da căng rát, châm chích khi dùng sản phẩm.</li>
+                        <li>Dễ đỏ, bong tróc, lên mụn li ti.</li>
+                        <li>Thay đổi thời tiết là da khó chịu ngay.</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>3.2. Cách phục hồi hàng rào da</h3>
+                    <ul>
+                        <li>Tạm ngưng treatment mạnh (AHA/BHA, retinoid...).</li>
+                        <li>Ưu tiên sữa rửa mặt dịu nhẹ, dưỡng ẩm phục hồi.</li>
+                        <li>Bôi kem chống nắng đều đặn mỗi ngày.</li>
+                    </ul>
+                    <a href="hangraobaoveda.html" class="btn">Đọc bài chi tiết</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN SAI LẦM THƯỜNG GẶP -->
+        <section id="sailam" class="section-block">
+            <h2>4. Những sai lầm chăm sóc da thường gặp</h2>
+            <p>
+                Nhiều vấn đề về da không phải do “da xấu” mà vì bạn đang chăm sóc sai cách
+                mà không biết. Một số sai lầm phổ biến:
+            </p>
+
+            <ul>
+                <li>Rửa mặt quá nhiều lần trong ngày.</li>
+                <li>Dùng tẩy da chết quá thường xuyên.</li>
+                <li>Lạm dụng nhiều sản phẩm treatment cùng lúc.</li>
+                <li>Bỏ qua kem chống nắng vì “ở trong nhà”.</li>
+            </ul>
 
             <div class="post-list">
                 <div class="post-card">
@@ -90,7 +439,7 @@
                 <div class="post-card">
                     <h3>3. Những sai lầm thường gặp</h3>
                     <p>Dùng quá nhiều sản phẩm, đổi liên tục, bỏ qua chống nắng...</p>
-                    <a href="basic-sai-lam-cham-soc-da.html" class="btn">Đọc bài</a>
+                    <a href="basic-sai-lam-thuong-gap.html" class="btn">Đọc bài</a>
                 </div>
             </div>
         </section>
@@ -106,84 +455,65 @@
             </ul>
         </section>
 
-        <!-- PHẦN THÀNH PHẦN -->
-        <section id="ingredients" class="section-block">
-            <h2>Các hoạt chất thường gặp trong skincare</h2>
-            <p>Một số hoạt chất được nghiên cứu nhiều và phổ biến:</p>
-            <ul>
-                <li><strong>AHA (Glycolic, Lactic):</strong> tẩy da chết hóa học, làm sáng da.</li>
-                <li><strong>BHA (Salicylic Acid):</strong> tan trong dầu, hỗ trợ mụn ẩn, mụn đầu đen.</li>
-                <li><strong>Niacinamide:</strong> hỗ trợ sáng da nhẹ, giảm đỏ, cân bằng dầu.</li>
-                <li><strong>Retinol:</strong> hỗ trợ lão hóa, kết cấu da – cần dùng từ từ, kết hợp dưỡng phục hồi.</li>
-                <li><strong>HA (Hyaluronic Acid):</strong> hút ẩm, giúp da căng mọng hơn khi được khóa ẩm đúng.</li>
-            </ul>
-        </section>
-
-        <!-- PHẦN LIÊN HỆ -->
-        <section id="contact" class="section-block">
-            <h2>Liên hệ & Góp ý</h2>
-            <p>Nếu bạn có câu hỏi về chăm da khoa học, hãy để lại thông tin:</p>
+        <!-- LIÊN HỆ -->
+        <section id="lienhe" class="section-block">
+            <h2>Liên hệ & góp ý nội dung</h2>
+            <p>
+                Nếu bạn có câu hỏi về routine, sản phẩm hoặc muốn góp ý nội dung cho website
+                “Chăm Da Khoa Học”, hãy điền form dưới đây:
+            </p>
 
             <div class="contact-box">
-                <div class="form-group">
-                    <label for="name">Họ và tên</label>
-                    <input type="text" id="name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Câu hỏi / góp ý</label>
-                    <textarea id="message" rows="4"></textarea>
-                </div>
-
-                <button class="btn">Gửi</button>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Tên của bạn</label>
+                        <input type="text" id="name" name="name" placeholder="Nhập tên...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (nếu có)</label>
+                        <input type="email" id="email" name="email" placeholder="Nhập email...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nội dung góp ý / câu hỏi</label>
+                        <textarea id="message" name="message" placeholder="Viết nội dung tại đây..."></textarea>
+                    </div>
+                    <button type="submit">Gửi</button>
+                </form>
             </div>
         </section>
 
         <footer>
-            © 2025 Chăm Da Khoa Học · Kiến thức chuẩn – hiệu quả lâu dài 💗
+            <p>&copy; 2025 Chăm Da Khoa Học. Nội dung mang tính tham khảo, không thay thế tư vấn bác sĩ da liễu.</p>
+            <p>Tham khảo thêm:
+                <a href="basic.html">Chăm sóc da cơ bản</a> |
+                <a href="hangraobaoveda.html">Hàng rào bảo vệ da</a>
+            </p>
         </footer>
-    </div>
+    </main>
 
-    <!-- JS ẨN / HIỆN CÁC PHẦN KHI ẤN MENU -->
+    <!-- JS nhỏ để active menu theo click (tùy chọn) -->
     <script>
-        const menuLinks = document.querySelectorAll('.sidebar a[data-section]');
-        const sections = document.querySelectorAll('.section-block');
+        const navLinks = document.querySelectorAll(".sidebar nav a");
+        const sections = document.querySelectorAll("main .section-block");
 
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
+        navLinks.forEach(link => {
+            link.addEventListener("click", function (e) {
+                // Nếu dùng scroll tới id thì giữ nguyên, chỉ xử lý class active
+                navLinks.forEach(item => item.classList.remove("active"));
+                this.classList.add("active");
 
-                const targetId = this.getAttribute('data-section');
-
-                // Bỏ active tất cả
-                menuLinks.forEach(a => a.classList.remove('active'));
-                this.classList.add('active');
-
-                if (targetId === 'home') {
-                    // Trang chủ: hiện TẤT CẢ section
-                    sections.forEach(sec => sec.classList.remove('hidden'));
-                } else {
-                    // Các mục khác: chỉ hiện một section
-                    sections.forEach(sec => sec.classList.add('hidden'));
-                    const targetSection = document.getElementById(targetId);
-                    if (targetSection) {
-                        targetSection.classList.remove('hidden');
+                // Nếu muốn ẩn/hiện section (tùy chọn)
+                const targetId = this.getAttribute("href").replace("#", "");
+                sections.forEach(section => {
+                    if (section.id !== targetId && this.getAttribute("href").startsWith("#")) {
+                        // section.classList.add('hidden');  // nếu muốn ẩn
+                    } else {
+                        section.classList.remove('hidden');
                     }
-                }
+                });
             });
         });
     </script>
 
 </body>
 </html>
-
-
-
-
-
-
