@@ -4,187 +4,316 @@
     <meta charset="UTF-8">
     <title>6 sai lầm chăm sóc da khiến da yếu đi và cách khắc phục | Chăm Da Khoa Học</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO -->
     <meta name="description" content="Tổng hợp 6 sai lầm chăm sóc da phổ biến khiến da yếu, dễ kích ứng và breakout. Học cách phục hồi đúng khoa học giúp da khỏe hơn chỉ với routine cơ bản.">
     <meta name="keywords" content="sai lầm chăm sóc da, skin barrier yếu, phục hồi skin barrier, sai lầm skincare, chăm da cơ bản, hàng rào bảo vệ da">
     <link rel="canonical" href="https://nhom8tuhcctk.github.io/chamdakhoahoc/basic-cham-soc-co-ban.html">
-    
+
     <style>
-        body { 
-            background: #fff9fb; 
-            font-family: Arial, sans-serif; 
-            color: #333; 
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
-        .container { 
-            max-width: 900px; 
-            margin: 20px auto; 
-            background: #fff; 
-            padding: 20px 28px; 
-            border-radius: 16px; 
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08); 
+
+        body {
+            background-color: #fff9fb;
+            color: #333;
         }
-        h1 { 
-            color: #c2185b; 
-            font-size: 2rem; 
-            margin-bottom: 10px; 
+
+        /* HEADER */
+        header {
+            width: 100%;
+            background: #ff99c8;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        h2 { 
-            color: #d81b60; 
-            margin-top: 20px; 
+
+        .logo span {
+            font-weight: 700;
+            font-size: 1.3rem;
         }
-        .box { 
-            background: #ffeef6; 
-            padding: 14px; 
-            border-radius: 10px; 
-            border: 1px solid #ffc1dc; 
-            margin: 15px 0; 
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
-        img { 
-            width: 100%; 
-            border-radius: 14px; 
-            margin: 12px 0; 
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 6px 10px;
+            border-radius: 16px;
+            transition: 0.2s;
         }
-        .highlight { 
-            background: #fff0f7; 
-            padding: 14px; 
-            border-left: 4px solid #ff84b7; 
-            margin: 20px 0; 
-        }
-        .meta {
-            font-size: 0.9rem;
-            color: #777;
-            margin-bottom: 12px;
-        }
-        .breadcrumb {
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            color: #777;
-        }
-        .breadcrumb a {
+
+        nav a:hover {
+            background: #ffe5f0;
             color: #c2185b;
+        }
+
+        /* ARTICLE WRAPPER */
+        .container {
+            max-width: 900px;
+            margin: 30px auto 40px;
+            padding: 0 20px 30px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            border: 1px solid #ffd1e6;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            padding: 14px 0 0;
+            color: #777;
+        }
+
+        .breadcrumb a {
+            color: #ff84b7;
             text-decoration: none;
         }
+
         .breadcrumb a:hover {
             text-decoration: underline;
         }
-        .back-link-wrapper {
-            margin-top: 24px;
+
+        article {
+            padding: 10px 0 20px;
         }
-        .back-link-wrapper a {
-            text-decoration: none;
+
+        h1 {
+            font-size: 1.9rem;
             color: #c2185b;
-            font-weight: 600;
+            margin-bottom: 8px;
         }
-        .back-link-wrapper a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            max-width: 900px;
-            margin: 10px auto 30px;
+
+        .meta {
             font-size: 0.9rem;
-            color: #777;
-            text-align: left;
-            padding: 0 8px;
+            color: #888;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: #d81b60;
+            margin: 20px 0 10px;
+        }
+
+        h3 {
+            color: #e91e63;
+            font-size: 1.1rem;
+            margin: 12px 0 8px;
+        }
+
+        p, li {
+            font-size: 0.97rem;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .note {
+            background: #fff0f7;
+            border-left: 4px solid #ff84b7;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 12px 0 20px;
+            font-size: 0.93rem;
+        }
+
+        .tip-box {
+            background: #ffeef6;
+            padding: 14px;
+            border-radius: 10px;
+            border: 1px solid #ffc1dc;
+            margin: 20px 0;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 14px;
+            margin: 12px 0;
+        }
+
+        .back-btn-wrapper {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 18px;
+            background: #ff84b7;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #ff5fa1;
+        }
+
+        footer {
+            text-align: center;
+            background: #ff99c8;
+            color: white;
+            padding: 14px 12px;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
+<header>
+    <div class="logo">
+        <span>Chăm Da Khoa Học</span>
+    </div>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="basic.html">Cơ bản</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
     <div class="breadcrumb">
         <a href="index.html">Trang chủ</a> › 
         <a href="basic.html">Cơ bản</a> › 
         6 sai lầm chăm sóc da khiến da càng yếu đi
     </div>
 
-    <h1>6 sai lầm chăm sóc da khiến da càng yếu đi</h1>
-    <p class="meta">Chuyên mục: Cơ bản · Thời gian đọc: ~4 phút</p>
+    <article>
 
-    <img src="image/skin-barrier-la-gi.jpg" alt="Skin barrier là gì và vì sao dễ bị tổn thương">
+        <h1>6 sai lầm chăm sóc da khiến da càng yếu đi</h1>
+        <div class="meta">Chuyên mục: Cơ bản · Thời gian đọc: ~4 phút</div>
 
-    <p>Nhiều người chăm da đều đặn nhưng da vẫn dễ nổi mụn, bong tróc hoặc nhạy cảm. Nguyên nhân thường nằm ở những sai lầm skincare mà bạn không để ý.</p>
+        <img src="image/skin-barrier-la-gi.jpg" alt="Skin barrier là gì và vì sao dễ bị tổn thương">
 
-    <div class="highlight">
-        <strong>Lưu ý:</strong> Chăm da sai cách không chỉ vô hiệu mà còn khiến hàng rào bảo vệ da yếu dần theo thời gian.
-    </div>
+        <p>
+            Nhiều người chăm da đều đặn nhưng da vẫn dễ nổi mụn, bong tróc hoặc nhạy cảm. 
+            Nguyên nhân thường nằm ở những sai lầm skincare mà bạn không để ý.
+        </p>
 
-    <!-- 1 -->
-    <h2>1. Rửa mặt quá nhiều lần</h2>
-    <img src="image/rua-mat-qua-nhieu-sai-lam.jpg" alt="Rửa mặt quá nhiều khiến da mất dầu tự nhiên">
-    <p>Rửa mặt liên tục không giúp da bớt dầu mà còn làm mất lớp dầu tự nhiên → da khô → tiết dầu nhiều hơn → dễ nổi mụn.</p>
+        <div class="note">
+            ⚠️ <strong>Lưu ý:</strong> Chăm da sai cách không chỉ vô hiệu mà còn khiến hàng rào bảo vệ da yếu dần theo thời gian.
+        </div>
 
-    <div class="box">
-        ✔ Chỉ nên rửa 1–2 lần/ngày.  
-        ✔ Da dầu không nên rửa quá 3 lần/ngày.
-    </div>
+        <!-- 1. RỬA MẶT QUÁ NHIỀU -->
+        <h2>1. Rửa mặt quá nhiều lần trong ngày</h2>
+        <img src="image/rua-mat-qua-nhieu-sai-lam.jpg" alt="Rửa mặt quá nhiều khiến da mất dầu tự nhiên">
+        <p>
+            Rửa mặt liên tục không giúp da bớt dầu mà ngược lại còn làm mất lớp dầu tự nhiên bảo vệ bề mặt da. 
+            Khi đó, da bị khô, căng và sẽ kích hoạt cơ chế tiết dầu nhiều hơn → dễ bít tắc lỗ chân lông và nổi mụn.
+        </p>
 
-    <!-- 2 -->
-    <h2>2. Tẩy da chết quá nhiều</h2>
-    <img src="image/tay-da-chet-qua-nhieu.jpg" alt="Lạm dụng tẩy da chết làm da nhạy cảm và bong tróc">
-    <p>AHA/BHA rất tốt nhưng nếu dùng quá mức sẽ gây bong tróc, mẩn đỏ và phá vỡ skin barrier.</p>
+        <div class="tip-box">
+            ✔ Chỉ nên rửa mặt 1–2 lần/ngày (sáng và tối).<br>
+            ✔ Da dầu cũng không nên rửa quá 3 lần/ngày, tránh dùng sữa rửa mặt có độ làm sạch quá mạnh.
+        </div>
 
-    <div class="box">
-        ✔ Dùng 1–3 lần/tuần.  
-        ✔ Da nhạy cảm chọn nồng độ thấp.
-    </div>
+        <!-- 2. TẨY DA CHẾT QUÁ NHIỀU -->
+        <h2>2. Tẩy da chết quá nhiều</h2>
+        <img src="image/tay-da-chet-qua-nhieu.jpg" alt="Lạm dụng tẩy da chết làm da nhạy cảm và bong tróc">
+        <p>
+            AHA/BHA giúp loại bỏ tế bào chết, hỗ trợ làm sạch lỗ chân lông và cải thiện bề mặt da. 
+            Tuy nhiên, nếu lạm dụng (thoa nồng độ cao, dùng mỗi ngày) da dễ bị bong tróc, đỏ rát, châm chích và trở nên nhạy cảm hơn.
+        </p>
 
-    <!-- 3 -->
-    <h2>3. Lạm dụng treatment mạnh</h2>
-    <img src="image/lam-dung-treatment-retinol.jpg" alt="Lạm dụng retinol khiến da tổn thương">
-    <p>Dùng nhiều treatment mạnh như Retinol, Acid liên tục khiến da dễ kích ứng và yếu đi.</p>
+        <div class="tip-box">
+            ✔ Dùng AHA/BHA khoảng 1–3 lần/tuần tùy loại da và tình trạng da.<br>
+            ✔ Da nhạy cảm nên bắt đầu với nồng độ thấp và tần suất thưa (1 lần/tuần).
+        </div>
 
-    <div class="box">
-        ✔ Bắt đầu từ tần suất thấp – nồng độ thấp.  
-        ✔ Tăng dần sau 3–4 tuần khi da đã quen.
-    </div>
+        <!-- 3. LẠM DỤNG TREATMENT MẠNH -->
+        <h2>3. Lạm dụng treatment mạnh (Retinol, Acid)</h2>
+        <img src="image/lam-dung-treatment-retinol.jpg" alt="Lạm dụng retinol khiến da tổn thương">
+        <p>
+            Retinol, tretinoin hay các loại acid mạnh (AHA nồng độ cao, peel da…) có khả năng cải thiện mụn, 
+            nám, nếp nhăn. Nhưng nếu dùng dày, không có bước làm quen da, hàng rào bảo vệ da sẽ bị tổn thương, 
+            dễ kích ứng, bong tróc hoặc viêm đỏ kéo dài.
+        </p>
 
-    <!-- 4 -->
-    <h2>4. Không bôi kem chống nắng</h2>
-    <img src="image/khong-boi-kem-chong-nang.jpg" alt="Không dùng kem chống nắng làm da lão hóa nhanh">
-    <p>Tia UV gây đến 80% dấu hiệu lão hóa. Không chống nắng thì skincare 10 bước cũng vô ích.</p>
+        <div class="tip-box">
+            ✔ Bắt đầu với nồng độ thấp và tần suất 1–2 lần/tuần, luôn ưu tiên phục hồi kèm theo.<br>
+            ✔ Tăng dần tần suất sau 3–4 tuần khi da đã quen, không nên “vội vàng” mong da đẹp nhanh.
+        </div>
 
-    <div class="box">
-        ✔ Dùng SPF 30 trở lên.  
-        ✔ Bôi lại sau 2–3 giờ nếu hoạt động ngoài trời.
-    </div>
+        <!-- 4. KHÔNG BÔI KEM CHỐNG NẮNG -->
+        <h2>4. Không bôi kem chống nắng mỗi ngày</h2>
+        <img src="image/khong-boi-kem-chong-nang.jpg" alt="Không dùng kem chống nắng làm da lão hóa nhanh">
+        <p>
+            Tia UV là nguyên nhân chính gây lão hóa sớm, nám, tàn nhang và khiến skin barrier suy yếu. 
+            Dù bạn skincare 5 hay 10 bước nhưng bỏ qua kem chống nắng thì hiệu quả hầu như bằng 0, 
+            thậm chí da còn yếu đi theo thời gian.
+        </p>
 
-    <!-- 5 -->
-    <h2>5. Dùng quá nhiều sản phẩm cùng lúc</h2>
-    <img src="image/dung-qua-nhieu-san-pham.jpg" alt="Dùng nhiều sản phẩm skincare khiến da quá tải">
-    <p>Mix nhiều treatment cùng lúc không giúp da đẹp nhanh hơn mà dễ gây kích ứng &amp; break-out.</p>
+        <div class="tip-box">
+            ✔ Chọn kem chống nắng có SPF từ 30 trở lên, PA+++ hoặc tương đương.<br>
+            ✔ Bôi lại sau 2–3 giờ nếu hoạt động ngoài trời hoặc đổ nhiều mồ hôi.
+        </div>
 
-    <div class="box">
-        ✔ Chỉ nên dùng 1–2 treatment trong 1 routine.  
-        ✔ Tập trung phục hồi khi da yếu.
-    </div>
+        <!-- 5. DÙNG QUÁ NHIỀU SẢN PHẨM CÙNG LÚC -->
+        <h2>5. Dùng quá nhiều sản phẩm cùng lúc</h2>
+        <img src="image/dung-qua-nhieu-san-pham.jpg" alt="Dùng nhiều sản phẩm skincare khiến da quá tải">
+        <p>
+            Layer quá nhiều bước (tẩy da chết, AHA, BHA, Retinol, Vitamin C, Niacinamide…) trong một routine 
+            không giúp da đẹp nhanh hơn mà còn khiến da “quá tải”, khó thích nghi. 
+            Khi đó, hàng rào da bị bào mòn, dễ kích ứng, nổi mụn li ti hoặc break-out toàn mặt.
+        </p>
 
-    <!-- 6 -->
-    <h2>6. Thay đổi sản phẩm liên tục</h2>
-    <img src="image/thay-doi-san-pham-lien-tuc.jpg" alt="Thay đổi mỹ phẩm liên tục khiến da không ổn định">
-    <p>Da cần 3–6 tuần để thích nghi với sản phẩm. Việc đổi liên tục khiến da “stress”, dễ nổi mụn.</p>
+        <div class="tip-box">
+            ✔ Chỉ nên dùng tối đa 1–2 treatment hoạt chất mạnh trong một routine buổi tối.<br>
+            ✔ Nếu da đang yếu, hãy tối giản: làm sạch dịu – dưỡng ẩm – chống nắng, ưu tiên phục hồi.
+        </div>
 
-    <div class="box">
-        ✔ Kiên nhẫn dùng ít nhất 3–4 tuần trước khi đánh giá hiệu quả.
-    </div>
+        <!-- 6. THAY ĐỔI SẢN PHẨM LIÊN TỤC -->
+        <h2>6. Thay đổi sản phẩm liên tục</h2>
+        <img src="image/thay-doi-san-pham-lien-tuc.jpg" alt="Thay đổi mỹ phẩm liên tục khiến da không ổn định">
+        <p>
+            Da cần thời gian để thích nghi với sản phẩm mới (thường 3–6 tuần). 
+            Nếu bạn liên tục đổi sữa rửa mặt, serum, kem dưỡng chỉ sau vài ngày vì “chưa thấy hiệu quả”, 
+            da sẽ không kịp ổn định, dễ xuất hiện mụn và kích ứng.
+        </p>
 
-    <div class="highlight">
-        ❤️ <strong>Kết luận:</strong> Làm đúng 3 bước: làm sạch – dưỡng ẩm – chống nắng giúp da khỏe 70–80%.  
-        Hạn chế các sai lầm trên để da ổn định và phục hồi tốt hơn.
-    </div>
+        <div class="tip-box">
+            ✔ Kiên nhẫn dùng sản phẩm ít nhất 3–4 tuần (nếu không bị kích ứng mạnh) rồi hãy đánh giá hiệu quả.<br>
+            ✔ Khi thêm sản phẩm mới, nên thêm từng bước một để dễ theo dõi phản ứng của da.
+        </div>
 
-    <div class="back-link-wrapper">
-        <a href="basic.html">← Quay lại mục Cơ bản</a>
-    </div>
+        <!-- KẾT LUẬN -->
+        <div class="note">
+            ❤️ <strong>Kết luận:</strong> Làm đúng 3 bước cơ bản: <strong>làm sạch – dưỡng ẩm – chống nắng</strong> 
+            đã giúp da khỏe lên đến 70–80%. Hạn chế các sai lầm trên, ưu tiên phục hồi hàng rào bảo vệ da, 
+            bạn sẽ thấy da “dễ chịu” và hợp tác với mình hơn rất nhiều.
+        </div>
 
+        <div class="back-btn-wrapper">
+            <a href="basic.html" class="btn">← Quay lại mục Cơ bản</a>
+        </div>
+
+    </article>
 </div>
 
 <footer>
-    © 2025 Chăm Da Khoa Học · Routine đơn giản, hiệu quả lâu dài
+    © 2025 Chăm Da Khoa Học · Routine đơn giản, hiệu quả lâu dài 💗
 </footer>
 
 </body>
