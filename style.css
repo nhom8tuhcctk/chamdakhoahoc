@@ -1,97 +1,56 @@
-/* ===== RESET CƠ BẢN – TỐT CHO UX & SEO ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #fff5fa; /* hồng rất nhạt – dễ đọc */
+    background: #fff;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* ===== HEADER ===== */
 header {
-    background: linear-gradient(135deg, #ff9acb, #ffb6d9);
-    color: #ffffff;
-    padding: 22px 15px;
-    text-align: center;
+    background: #fde2ea;
+    padding: 16px;
 }
 
 header h1 {
-    font-size: 1.9rem;
-    font-weight: 700;
-    margin-bottom: 6px;
+    color: #d6336c;
+    font-size: 24px;
 }
 
-header p {
-    font-size: 1rem;
-    font-weight: 400;
-    opacity: 0.95;
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #d6336c;
+    font-weight: 600;
 }
 
-/* ===== CONTAINER ===== */
 .container {
-    max-width: 1000px;
-    width: 90%;
-    margin: 35px auto;
-    background: #ffffff;
-    border-radius: 14px;
-    padding: 28px;
-    box-shadow: 0 8px 18px rgba(255, 105, 180, 0.2);
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
-/* ===== HEADING ===== */
-h2 {
-    color: #ff4da6;
-    margin-bottom: 12px;
-    font-size: 1.4rem;
+h2, h3 {
+    color: #d6336c;
+    margin-top: 20px;
 }
 
-/* ===== STEP / BOX ===== */
-.step {
-    background: #fff0f8;
-    padding: 16px 18px;
-    border-left: 5px solid #ff4da6;
-    margin-bottom: 16px;
+img {
+    width: 100%;
     border-radius: 10px;
+    margin: 15px 0;
 }
 
-.step h3 {
-    color: #ff4da6;
-    margin-bottom: 6px;
-    font-size: 1.1rem;
-}
-
-.step p,
-.step li {
-    font-size: 0.95rem;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    text-align: center;
-    padding: 18px 12px;
-    background: #ffb6d9;
-    margin-top: 40px;
-    color: #ffffff;
-    font-size: 0.9rem;
-}
-
-/* ===== RESPONSIVE (RẤT QUAN TRỌNG CHO SEO) ===== */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .container {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
+.back {
+    display: inline-block;
+    margin-top: 30px;
+    color: #fff;
+    background: #f06595;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
 }
