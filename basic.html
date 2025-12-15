@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Chăm sóc da cơ bản cho người mới | Chăm Da Khoa Học</title>
-    <meta name="description" content="Tổng hợp kiến thức chăm sóc da cơ bản: phân biệt loại da, routine sáng tối và những sai lầm thường gặp.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 1. Charset & Mobile -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- 2. SEO Meta -->
+  <title>Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới</title>
+  <meta name="description" content="Tìm hiểu kiến thức chăm sóc da khoa học, phù hợp cho người mới bắt đầu. Routine, các bước cơ bản, và sai lầm thường gặp." />
+
+  <!-- 3. Favicon nếu có -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- 4. CSS -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<header>
-    <h1>Chăm sóc da cơ bản</h1>
-</header>
+  <!-- Navigation / Menu -->
+  <nav>
+    <ul>
+      <li><a href="#tong-quan">Tổng quan</a></li>
+      <li><a href="#co-ban">Cơ bản</a></li>
+      <li><a href="#hang-rao">Hàng rào bảo vệ da</a></li>
+      <li><a href="#lien-he">Liên hệ</a></li>
+    </ul>
+  </nav>
 
-<div class="container">
-    <img src="image/02.jpg" alt="Kiến thức chăm sóc da cơ bản">
+  <!-- Main Content -->
+  <header>
+    <h1>Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới</h1>
+    <p>Website cung cấp kiến thức chăm sóc da chuẩn khoa học, giúp bạn hiểu đúng làn da và xây dựng routine hiệu quả, an toàn.</p>
+
+    <!-- Ảnh tiêu đề với ALT mô tả rõ -->
+    <img 
+      src="images/cham-soc-da-khoa-hoc.jpg" 
+      alt="Ảnh minh họa chăm sóc da khoa học cho người mới"
+      loading="lazy"
+    />
+  </header>
+
+  <!-- Section Tổng quan -->
+  <section id="tong-quan">
+    <h2>Tổng quan về chăm da khoa học</h2>
+    <p>Skincare không chỉ là dưỡng da cho đẹp mà còn là cách bảo vệ làn da khỏi ánh nắng, bụi bẩn và lão hóa.</p>
+  </section>
+
+  <!-- Section Cơ bản -->
+  <section id="co-ban">
+    <h2>Kiến thức chăm sóc da cơ bản</h2>
+
+    <!-- Ví dụ ảnh khác với ALT -->
+    <img 
+      src="images/steps-skincare-co-ban.jpg" 
+      alt="Các bước chăm sóc da cơ bản từ làm sạch đến chống nắng"
+      loading="lazy"
+    />
 
     <ul>
-        <li><a href="basic-cham-soc-co-ban.html">Chăm sóc da cơ bản là gì?</a></li>
-        <li><a href="basic-phan-biet-loai-da.html">Cách phân biệt loại da</a></li>
-        <li><a href="basic-routine-sang-toi.html">Routine sáng – tối chuẩn</a></li>
-        <li><a href="basic-sai-lam-thuong-gap.html">Sai lầm chăm sóc da thường gặp</a></li>
+      <li>Làm sạch da đúng cách</li>
+      <li>Dưỡng ẩm phù hợp</li>
+      <li>Bảo vệ da với kem chống nắng</li>
     </ul>
+  </section>
 
-    <a href="index.html" class="back">← Quay lại trang chủ</a>
-</div>
+  <!-- Hàng rào bảo vệ da -->
+  <section id="hang-rao">
+    <h2>Hàng rào bảo vệ da (Skin Barrier)</h2>
+    <p>Hàng rào da khỏe giúp da giữ ẩm và chống lại tác nhân xấu.</p>
+
+    <img 
+      src="images/skin-barrier.jpg" 
+      alt="Minh họa lớp hàng rào bảo vệ da khỏe mạnh và da bị tổn thương"
+      loading="lazy"
+    />
+  </section>
+
+  <!-- Liên hệ -->
+  <section id="lien-he">
+    <h2>Liên hệ & Góp ý</h2>
+    <form action="submit_feedback.php" method="POST">
+      <label for="name">Tên bạn:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Nội dung góp ý:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Chăm Da Khoa Học. Nội dung mang tính tham khảo, không thay thế tư vấn bác sĩ da liễu.</p>
+  </footer>
 
 </body>
 </html>
