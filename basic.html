@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cơ bản | Chăm Da Khoa Học</title>
+    <meta name="description" content="Chuyên mục chăm sóc da cơ bản: kiến thức nền tảng, routine đơn giản, nhận biết loại da và các sai lầm thường gặp khi skincare.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -18,50 +19,58 @@
             color: #333;
         }
 
-        /* HEADER */
+        /* ===== HEADER ===== */
         header {
-            width: 100%;
             background: #ff99c8;
-            color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 40px;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .logo span {
-            font-weight: 700;
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
             font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 10px;
         }
 
         nav a {
+            display: block;
+            padding: 8px 16px;
+            border-radius: 20px;
             text-decoration: none;
             color: #fff;
+            font-size: 0.95rem;
             font-weight: 500;
-            padding: 6px 10px;
-            border-radius: 16px;
-            transition: background 0.2s, color 0.2s;
+            transition: all 0.2s ease;
         }
 
-        nav a:hover {
+        nav a:hover,
+        nav a.active {
             background: #ffe5f0;
             color: #c2185b;
         }
 
-        /* WRAPPER TRANG CƠ BẢN */
+        /* ===== MAIN ===== */
         .container {
             max-width: 1000px;
             margin: 30px auto 40px;
-            padding: 0 20px 30px;
+            padding: 0 20px;
         }
 
         .breadcrumb {
@@ -75,23 +84,19 @@
             text-decoration: none;
         }
 
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
         h1 {
             font-size: 1.8rem;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             color: #c2185b;
         }
 
         .intro {
             font-size: 0.96rem;
             line-height: 1.6;
-            margin-bottom: 18px;
+            margin-bottom: 22px;
         }
 
-        /* DANH SÁCH BÀI VIẾT */
+        /* ===== POST GRID ===== */
         .post-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -99,30 +104,29 @@
         }
 
         .post-card {
-            background: #ffffff;
+            background: #fff;
             border-radius: 16px;
-            padding: 16px 14px 18px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            padding: 16px;
             border: 1px solid #ffd1e6;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
 
         .post-tag {
-            display: inline-block;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             padding: 4px 10px;
-            border-radius: 999px;
             background: #ffe5f3;
             color: #d81b60;
+            border-radius: 999px;
+            display: inline-block;
             margin-bottom: 6px;
         }
 
         .post-card h2 {
             font-size: 1.1rem;
             color: #d81b60;
-            margin: 4px 0 6px;
+            margin-bottom: 6px;
         }
 
         .post-meta {
@@ -134,134 +138,117 @@
         .post-excerpt {
             font-size: 0.92rem;
             line-height: 1.5;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .btn {
-            display: inline-block;
+            align-self: flex-start;
             padding: 8px 16px;
-            border-radius: 20px;
             background: #ff84b7;
             color: #fff;
+            border-radius: 20px;
             text-decoration: none;
             font-size: 0.9rem;
-            font-weight: 500;
-            align-self: flex-start;
+            transition: background 0.2s;
         }
 
         .btn:hover {
             background: #ff5fa1;
         }
 
+        /* ===== FOOTER ===== */
         footer {
-            text-align: center;
-            padding: 14px 10px 18px;
             background: #ff99c8;
-            color: #ffffff;
+            color: #fff;
+            text-align: center;
+            padding: 16px;
             font-size: 0.9rem;
-            margin-top: 14px;
+            margin-top: 30px;
         }
 
-        @media (max-width: 600px) {
-            header {
-                padding: 10px 16px;
+        /* ===== MOBILE ===== */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
             }
-            .container {
-                margin: 20px 10px 30px;
-                padding: 0 6px 20px;
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
             }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <div class="logo">
-        <span>Chăm Da Khoa Học</span>
+    <div class="header-inner">
+        <div class="logo">Chăm Da Khoa Học</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="basic.html" class="active">Cơ bản</a></li>
+                <li><a href="routine.html">Routine</a></li>
+                <li><a href="ingredients.html">Thành phần</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
     </div>
-<nav class="sidebar">
-    <div class="logo">Chăm Da Khoa Học</div>
-    <ul>
-<li><a href="index.html">Trang chủ</a></li>
-<li><a href="basic.html" class="active">Cơ bản</a></li>
-<li><a href="routine.html">Routine</a></li>
-<li><a href="ingredients.html">Thành phần</a></li>
-<li><a href="contact.html">Liên hệ</a></li>
-
-    </ul>
-</nav>
-
 </header>
 
-<div class="container">
+<main class="container">
     <div class="breadcrumb">
         <a href="index.html">Trang chủ</a> › Cơ bản
     </div>
 
     <h1>Chuyên mục: Chăm sóc da cơ bản</h1>
     <p class="intro">
-        Đây là nơi tổng hợp các bài viết nền tảng về chăm sóc da: cách xác định loại da, xây routine sáng – tối,
-        những sai lầm thường gặp và các nguyên tắc giúp da khỏe lâu dài. Hãy chọn bài phù hợp với bạn để đọc chi tiết.
+        Tổng hợp kiến thức nền tảng về chăm sóc da: nhận biết loại da, routine tối giản,
+        các sai lầm phổ biến và nguyên tắc giúp da khỏe lâu dài.
     </p>
 
     <div class="post-grid">
 
-        <!-- BÀI 1 -->
         <article class="post-card">
             <span class="post-tag">Cơ bản</span>
             <h2>Cách chăm sóc da cơ bản cho người mới bắt đầu</h2>
-            <div class="post-meta">Thời gian đọc ~ 5 phút</div>
-            <p class="post-excerpt">
-                Bạn mới bắt đầu skincare và thấy rối vì quá nhiều bước? Bài viết này giúp bạn quay về
-                4 bước nền tảng nhưng hiệu quả, đủ để da khỏe và ổn định lâu dài.
-            </p>
+            <div class="post-meta">⏱ 5 phút</div>
+            <p class="post-excerpt">Hướng dẫn skincare 4 bước nền tảng, dễ áp dụng cho người mới.</p>
             <a href="basic-cham-soc-co-ban.html" class="btn">Đọc bài</a>
         </article>
 
-        <!-- BÀI 2 -->
         <article class="post-card">
             <span class="post-tag">Loại da</span>
-            <h2>Cách nhận biết loại da: dầu, khô, hỗn hợp, nhạy cảm</h2>
-            <div class="post-meta">Thời gian đọc ~ 4 phút</div>
-            <p class="post-excerpt">
-                Không cần máy soi da phức tạp. Một vài dấu hiệu đơn giản sẽ giúp bạn hiểu mình thuộc
-                loại da nào để chọn sữa rửa mặt, kem dưỡng và chống nắng phù hợp.
-            </p>
+            <h2>Cách nhận biết loại da: dầu, khô, hỗn hợp</h2>
+            <div class="post-meta">⏱ 4 phút</div>
+            <p class="post-excerpt">Xác định loại da đúng giúp chọn sản phẩm phù hợp và tránh kích ứng.</p>
             <a href="basic-phan-biet-loai-da.html" class="btn">Đọc bài</a>
         </article>
 
-        <!-- BÀI 3 -->
         <article class="post-card">
             <span class="post-tag">Routine</span>
-            <h2>Gợi ý routine sáng – tối đơn giản cho người bận rộn</h2>
-            <div class="post-meta">Thời gian đọc ~ 4 phút</div>
-            <p class="post-excerpt">
-                Nếu bạn là người bận rộn, không có nhiều thời gian skincare, hãy tham khảo routine sáng – tối
-                chỉ 3–4 bước nhưng vẫn bảo vệ và phục hồi da hiệu quả.
-            </p>
+            <h2>Routine sáng – tối đơn giản cho người bận rộn</h2>
+            <div class="post-meta">⏱ 4 phút</div>
+            <p class="post-excerpt">Routine 3–4 bước vẫn đủ bảo vệ và phục hồi da.</p>
             <a href="basic-routine-sang-toi.html" class="btn">Đọc bài</a>
         </article>
 
-        <!-- BÀI 4 -->
         <article class="post-card">
             <span class="post-tag">Sai lầm</span>
-            <h2>6 sai lầm chăm sóc da khiến da càng yếu đi</h2>
-            <div class="post-meta">Thời gian đọc ~ 3 phút</div>
-            <p class="post-excerpt">
-                Tẩy da chết quá tay, dùng quá nhiều treatment, đổi sản phẩm liên tục, bỏ qua chống nắng...
-                Xem bạn đang mắc phải bao nhiêu trong số này.
-            </p>
+            <h2>6 sai lầm chăm sóc da khiến da yếu đi</h2>
+            <div class="post-meta">⏱ 3 phút</div>
+            <p class="post-excerpt">Những lỗi phổ biến làm da tổn thương mà nhiều người mắc phải.</p>
             <a href="basic-sai-lam-thuong-gap.html" class="btn">Đọc bài</a>
         </article>
 
     </div>
-</div>
+</main>
 
 <footer>
-    © 2025 Chăm Da Khoa Học · Routine đơn giản, hiệu quả lâu dài 💗
+    © 2025 Chăm Da Khoa Học · Skincare khoa học & tối giản 💗
 </footer>
 
 </body>
 </html>
-
-
