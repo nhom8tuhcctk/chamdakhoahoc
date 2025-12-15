@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thành phần skincare | Chăm Da Khoa Học</title>
+    <meta name="description" content="Tìm hiểu các thành phần skincare phổ biến như ceramide, niacinamide, retinol, AHA BHA và cách sử dụng an toàn cho từng loại da.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff9fb;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #ff99c8;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #ffe5f0;
+            color: #c2185b;
+        }
+
+        /* ===== MAIN ===== */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto 40px;
+            padding: 0 20px;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            color: #999;
+        }
+
+        .breadcrumb a {
+            color: #ff84b7;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #c2185b;
+        }
+
+        .intro {
+            font-size: 0.96rem;
+            line-height: 1.6;
+            margin-bottom: 26px;
+        }
+
+        /* ===== INGREDIENT LIST ===== */
+        .ingredient {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 18px;
+            background: #fff;
+            border-radius: 18px;
+            padding: 18px;
+            border: 1px solid #ffd1e6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        .ingredient img {
+            width: 100%;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+
+        .ingredient h2 {
+            font-size: 1.2rem;
+            color: #d81b60;
+            margin-bottom: 6px;
+        }
+
+        .ingredient p {
+            font-size: 0.94rem;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .ingredient ul {
+            padding-left: 18px;
+            font-size: 0.92rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #ff99c8;
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .ingredient {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">Chăm Da Khoa Học</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="basic.html">Cơ bản</a></li>
+                <li><a href="routine.html">Routine</a></li>
+                <li><a href="ingredients.html" class="active">Thành phần</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> › Thành phần
+    </div>
+
+    <h1>Thành phần skincare phổ biến</h1>
+    <p class="intro">
+        Hiểu đúng thành phần giúp bạn chọn sản phẩm phù hợp và tránh kích ứng không cần thiết.
+        Dưới đây là những hoạt chất thường gặp trong skincare và cách sử dụng an toàn.
+    </p>
+
+    <!-- CERAMIDE -->
+    <section class="ingredient">
+        <img src="image/ceramide.jpg" alt="Ceramide trong chăm sóc da" loading="lazy">
+        <div>
+            <h2>Ceramide</h2>
+            <p>Thành phần quan trọng giúp phục hồi và củng cố hàng rào bảo vệ da.</p>
+            <ul>
+                <li>Phù hợp da khô, da yếu, da treatment</li>
+                <li>Giúp giữ ẩm và giảm kích ứng</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- NIACINAMIDE -->
+    <section class="ingredient">
+        <img src="image/skin-barrier.jpg" alt="Niacinamide và hàng rào bảo vệ da" loading="lazy">
+        <div>
+            <h2>Niacinamide</h2>
+            <p>Hoạt chất đa năng giúp cải thiện hàng rào da và kiểm soát dầu.</p>
+            <ul>
+                <li>Giảm đỏ, hỗ trợ thu nhỏ lỗ chân lông</li>
+                <li>Nồng độ 2–5% phù hợp người mới</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- RETINOL -->
+    <section class="ingredient">
+        <img src="image/lam-dung-treatment-retinol.jpg" alt="Retinol trong chăm sóc da" loading="lazy">
+        <div>
+            <h2>Retinol</h2>
+            <p>Hoạt chất chống lão hóa mạnh, cần dùng đúng cách.</p>
+            <ul>
+                <li>Dùng buổi tối, bắt buộc chống nắng ban ngày</li>
+                <li>Không lạm dụng, tăng nồng độ từ từ</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- AHA BHA -->
+    <section class="ingredient">
+        <img src="image/tay-da-chet-qua-nhieu.jpg" alt="AHA BHA tẩy tế bào chết hóa học" loading="lazy">
+        <div>
+            <h2>AHA / BHA</h2>
+            <p>Tẩy tế bào chết hóa học giúp da sáng và mịn hơn.</p>
+            <ul>
+                <li>AHA phù hợp da khô – xỉn màu</li>
+                <li>BHA phù hợp da dầu – mụn</li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2025 Chăm Da Khoa Học · Hiểu đúng thành phần – da khỏe lâu dài 💗
+</footer>
+
+</body>
+</html>
