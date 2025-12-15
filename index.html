@@ -5,15 +5,11 @@
 
     <!-- SEO -->
     <title>Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới</title>
-
     <meta name="description"
-          content="Chăm Da Khoa Học chia sẻ kiến thức skincare dựa trên nghiên cứu khoa học: chăm sóc da cơ bản, routine tối giản, hàng rào bảo vệ da.">
-
+          content="Chăm Da Khoa Học chia sẻ kiến thức chăm sóc da cơ bản, routine tối giản và hàng rào bảo vệ da dựa trên nghiên cứu khoa học.">
     <meta name="keywords"
-          content="chăm da khoa học, skincare cơ bản, routine skincare, hàng rào bảo vệ da">
-
+          content="chăm da khoa học, chăm sóc da cơ bản, routine skincare, hàng rào bảo vệ da">
     <meta name="author" content="Nhóm 8 – Chăm Da Khoa Học">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -29,10 +25,15 @@
             color: #333;
         }
 
-        /* HEADER */
+        /* ===== HEADER & MENU ===== */
         header {
             background: #ff99c8;
-            padding: 16px 30px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 14px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -40,28 +41,39 @@
 
         .logo {
             color: #fff;
+            font-size: 1.25rem;
             font-weight: 700;
-            font-size: 1.2rem;
+            white-space: nowrap;
         }
 
-        nav a {
+        .main-nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
             color: #fff;
             text-decoration: none;
-            margin-left: 18px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 0.95rem;
             font-weight: 500;
+            transition: background 0.2s;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        .main-nav a:hover,
+        .main-nav a.active {
+            background: rgba(255,255,255,0.25);
         }
 
-        /* HERO */
+        /* ===== HERO ===== */
         .hero {
-            max-width: 1100px;
-            margin: 40px auto;
+            max-width: 1200px;
+            margin: 30px auto;
             padding: 30px;
             background: #ffffff;
-            border-radius: 20px;
+            border-radius: 22px;
             display: grid;
             grid-template-columns: 1.2fr 1fr;
             gap: 30px;
@@ -70,79 +82,96 @@
 
         .hero h1 {
             color: #c2185b;
-            margin-bottom: 12px;
             font-size: 2rem;
+            margin-bottom: 10px;
         }
 
         .hero p {
             line-height: 1.7;
+            font-size: 1rem;
         }
 
         .hero img {
             width: 100%;
-            height: 180px;
+            height: 200px;
             object-fit: cover;
-            border-radius: 16px;
+            border-radius: 18px;
         }
 
-        /* SECTION */
+        /* ===== MAIN ===== */
         main {
-            max-width: 1100px;
-            margin: 20px auto 50px;
-            padding: 0 30px;
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
         }
 
-        h2 {
+        main h2 {
             color: #c2185b;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
+            font-size: 1.5rem;
         }
 
         .card-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
+            gap: 22px;
         }
 
         .card {
             background: #fff;
-            padding: 20px;
-            border-radius: 16px;
+            padding: 22px;
+            border-radius: 18px;
             border: 1px solid #ffd1e6;
         }
 
         .card h3 {
             color: #d81b60;
             margin-bottom: 6px;
+            font-size: 1.1rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
 
         .card a {
             display: inline-block;
-            margin-top: 10px;
-            padding: 7px 14px;
+            margin-top: 12px;
+            padding: 7px 16px;
             background: #ff84b7;
             color: #fff;
             text-decoration: none;
-            border-radius: 20px;
+            border-radius: 999px;
             font-size: 0.9rem;
         }
 
-        /* FOOTER */
+        .card a:hover {
+            background: #ff5fa1;
+        }
+
+        /* ===== FOOTER ===== */
         footer {
             background: #ff99c8;
             color: #fff;
             text-align: center;
             padding: 14px;
+            font-size: 0.9rem;
         }
 
-        /* MOBILE */
+        /* ===== MOBILE ===== */
         @media (max-width: 768px) {
             .hero {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
 
-            nav a {
-                margin-left: 10px;
+            .hero img {
+                height: 180px;
+            }
+
+            .main-nav {
+                justify-content: center;
             }
         }
     </style>
@@ -151,56 +180,54 @@
 <body>
 
 <header>
-    <div class="logo">Chăm Da Khoa Học</div>
-    <nav>
-        <a href="index.html">Trang chủ</a>
-        <a href="basic.html">Cơ bản</a>
-        <a href="routine.html">Routine</a>
-        <a href="ingredients.html">Thành phần</a>
-        <a href="contact.html">Liên hệ</a>
-    </nav>
+    <div class="header-inner">
+        <div class="logo">Chăm Da Khoa Học</div>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Trang chủ</a>
+            <a href="basic.html">Cơ bản</a>
+            <a href="routine.html">Routine</a>
+            <a href="ingredients.html">Thành phần</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
     <div>
         <h1>Chăm da dựa trên khoa học</h1>
         <p>
-            Chăm Da Khoa Học chia sẻ kiến thức skincare dựa trên nghiên cứu khoa học,
-            giúp bạn hiểu làn da, xây dựng routine tối giản và duy trì làn da khỏe lâu dài.
+            Chăm Da Khoa Học chia sẻ kiến thức chăm sóc da dựa trên nghiên cứu khoa học,
+            giúp người mới bắt đầu xây dựng routine đơn giản, hiệu quả và lâu dài.
         </p>
     </div>
 
     <img src="image/skin-barrier.jpg"
-         alt="Minh họa hàng rào bảo vệ da"
+         alt="Minh họa hàng rào bảo vệ da – skin barrier"
          loading="lazy">
 </section>
 
 <main>
-
     <h2>Chuyên mục nổi bật</h2>
 
     <div class="card-list">
-
         <div class="card">
-            <h3>Cơ bản</h3>
+            <h3>Chăm sóc da cơ bản</h3>
             <p>Kiến thức nền tảng cho người mới bắt đầu chăm sóc da.</p>
             <a href="basic.html">Xem chuyên mục</a>
         </div>
 
         <div class="card">
-            <h3>Routine</h3>
-            <p>Gợi ý routine sáng – tối đơn giản, hiệu quả.</p>
+            <h3>Routine chăm sóc da</h3>
+            <p>Gợi ý routine sáng – tối đơn giản, dễ áp dụng.</p>
             <a href="routine.html">Xem routine</a>
         </div>
 
         <div class="card">
-            <h3>Thành phần</h3>
-            <p>Giải thích các hoạt chất phổ biến trong skincare.</p>
-            <a href="ingredients.html">Tìm hiểu</a>
+            <h3>Thành phần skincare</h3>
+            <p>Giải thích các hoạt chất phổ biến một cách dễ hiểu.</p>
+            <a href="ingredients.html">Tìm hiểu thêm</a>
         </div>
-
     </div>
-
 </main>
 
 <footer>
