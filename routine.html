@@ -2,247 +2,161 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Routine chăm sóc da | Chăm Da Khoa Học</title>
+
+    <!-- SEO TITLE -->
+    <title>Routine chăm sóc da sáng & tối đơn giản, khoa học | Chăm Da Khoa Học</title>
+
+    <!-- META SEO -->
+    <meta name="description"
+          content="Hướng dẫn routine chăm sóc da sáng và tối đơn giản, khoa học cho người mới bắt đầu. Dễ áp dụng, phù hợp mọi loại da.">
+
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Gợi ý routine chăm sóc da sáng – tối đơn giản theo từng loại da. Hướng dẫn xây routine khoa học, dễ áp dụng cho người mới bắt đầu.">
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Routine chăm sóc da sáng & tối đơn giản, khoa học">
+    <meta property="og:description" content="Routine skincare tối giản, dễ áp dụng cho người mới bắt đầu.">
+    <meta property="og:image" content="image/routine-cham-toc-da-ban-ngay.webp">
+    <meta property="og:url" content="https://nhom8tuhcctk.github.io/chamdakhoahoc/routine.html">
 
+    <!-- SCHEMA ARTICLE -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Routine chăm sóc da sáng & tối đơn giản, khoa học",
+      "description": "Hướng dẫn routine chăm sóc da sáng – tối cho người mới bắt đầu theo hướng khoa học và tối giản.",
+      "image": "https://nhom8tuhcctk.github.io/chamdakhoahoc/image/routine-cham-toc-da-ban-ngay.webp",
+      "author": {
+        "@type": "Organization",
+        "name": "Chăm Da Khoa Học"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Chăm Da Khoa Học"
+      }
+    }
+    </script>
+
+    <!-- SCHEMA BREADCRUMB -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://nhom8tuhcctk.github.io/chamdakhoahoc/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Routine chăm sóc da",
+        "item": "https://nhom8tuhcctk.github.io/chamdakhoahoc/routine.html"
+      }]
+    }
+    </script>
+
+    <!-- CSS (GIỮ NGUYÊN STYLE CỦA BẠN) -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", Arial, sans-serif;
-        }
-
-        body {
-            background-color: #fff9fb;
-            color: #333;
-        }
-
-        /* HEADER */
-        header {
-            width: 100%;
-            background: #ff99c8;
-            color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 40px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo span {
-            font-weight: 700;
-            font-size: 1.3rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-            padding: 6px 10px;
-            border-radius: 16px;
-            transition: background 0.2s, color 0.2s;
-        }
-
-        nav a:hover {
-            background: #ffe5f0;
-            color: #c2185b;
-        }
-
-        nav a.active {
-            background: #ffe5f0;
-            color: #c2185b;
-            font-weight: 600;
-        }
-
-        /* CONTAINER */
-        .container {
-            max-width: 1000px;
-            margin: 30px auto 40px;
-            padding: 0 20px 30px;
-        }
-
-        .breadcrumb {
-            font-size: 0.85rem;
-            margin-bottom: 10px;
-            color: #999;
-        }
-
-        .breadcrumb a {
-            color: #ff84b7;
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 1.8rem;
-            color: #c2185b;
-            margin-bottom: 8px;
-        }
-
-        .intro {
-            font-size: 0.96rem;
-            line-height: 1.6;
-            margin-bottom: 24px;
-        }
-
-        /* ROUTINE BLOCK */
-        .routine-block {
-            background: #ffffff;
-            border-radius: 18px;
-            padding: 20px;
-            margin-bottom: 24px;
-            border: 1px solid #ffd1e6;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .routine-block img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 16px;
-        }
-
-        .routine-content h2 {
-            color: #d81b60;
-            margin-bottom: 8px;
-            font-size: 1.3rem;
-        }
-
-        .routine-content ul {
-            margin-left: 18px;
-            margin-top: 6px;
-        }
-
-        .routine-content li {
-            margin-bottom: 6px;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        /* NOTE */
-        .note {
-            background: #ffeef6;
-            border-left: 4px solid #ff84b7;
-            padding: 14px 16px;
-            border-radius: 12px;
-            font-size: 0.95rem;
-            margin-top: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 14px 10px 18px;
-            background: #ff99c8;
-            color: #ffffff;
-            font-size: 0.9rem;
-            margin-top: 14px;
-        }
-
-        @media (max-width: 700px) {
-            header {
-                padding: 10px 16px;
-            }
-
-            .container {
-                margin: 20px 10px 30px;
-                padding: 0 6px 20px;
-            }
-
-            .routine-block {
-                grid-template-columns: 1fr;
-            }
-
-            .routine-block img {
-                height: 200px;
-            }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Arial,sans-serif}
+        body{background:#fff9fb;color:#333}
+        header{background:#ff99c8;display:flex;justify-content:space-between;align-items:center;padding:12px 40px;position:sticky;top:0;z-index:100}
+        nav ul{list-style:none;display:flex;gap:20px}
+        nav a{text-decoration:none;color:#fff;padding:6px 10px;border-radius:16px}
+        nav a.active,nav a:hover{background:#ffe5f0;color:#c2185b}
+        .container{max-width:1000px;margin:30px auto;padding:0 20px 30px}
+        .breadcrumb{font-size:.85rem;color:#999;margin-bottom:10px}
+        .breadcrumb a{color:#ff84b7;text-decoration:none}
+        h1{font-size:1.85rem;color:#c2185b;margin-bottom:10px}
+        .intro{margin-bottom:26px;line-height:1.7}
+        .routine-block{background:#fff;border-radius:18px;padding:20px;margin-bottom:26px;border:1px solid #ffd1e6;box-shadow:0 3px 10px rgba(0,0,0,.05);display:grid;grid-template-columns:1fr 1fr;gap:20px}
+        .routine-block img{width:100%;height:220px;object-fit:cover;border-radius:16px}
+        h2{color:#d81b60;font-size:1.35rem;margin-bottom:10px}
+        ul{margin-left:18px}
+        li{margin-bottom:6px;line-height:1.6}
+        .note{background:#ffeef6;border-left:4px solid #ff84b7;padding:14px 16px;border-radius:12px}
+        footer{text-align:center;background:#ff99c8;color:#fff;padding:14px;margin-top:20px}
+        @media(max-width:700px){
+            header{padding:10px 16px}
+            .routine-block{grid-template-columns:1fr}
+            .routine-block img{height:200px}
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <div class="logo">
-        <span>Chăm Da Khoa Học</span>
-    </div>
+    <strong>Chăm Da Khoa Học</strong>
     <nav>
         <ul>
-            <li><a href="index.html">🏠 Trang chủ</a></li>
-            <li><a href="basic.html">📘 Cơ bản</a></li>
-            <li><a href="routine.html" class="active">✨ Routine</a></li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="basic.html">Cơ bản</a></li>
+            <li><a href="routine.html" class="active">Routine</a></li>
         </ul>
     </nav>
 </header>
 
-<div class="container">
-    <div class="breadcrumb">
-        <a href="index.html">Trang chủ</a> › Routine
-    </div>
+<main class="container">
 
-    <h1>Routine chăm sóc da đơn giản & khoa học</h1>
-    <p class="intro">
-        Routine không cần nhiều bước mới hiệu quả. Điều quan trọng là hiểu làn da,
-        chọn đúng sản phẩm và duy trì đều đặn. Dưới đây là các routine gợi ý dễ áp dụng
-        cho người mới bắt đầu.
-    </p>
+    <nav class="breadcrumb">
+        <a href="index.html">Trang chủ</a> › Routine chăm sóc da
+    </nav>
 
-    <!-- ROUTINE SÁNG -->
-    <section class="routine-block">
-        <img
-            src="image/routine-cham-toc-da-ban-ngay.webp"
-            alt="Routine chăm sóc da ban ngày khoa học"
-            loading="lazy"
-        >
-        <div class="routine-content">
-            <h2>Routine buổi sáng 🌤️</h2>
-            <ul>
-                <li><strong>1. Sữa rửa mặt dịu nhẹ:</strong> làm sạch dầu thừa sau một đêm.</li>
-                <li><strong>2. Serum / toner cấp ẩm:</strong> giúp da mềm và cân bằng.</li>
-                <li><strong>3. Kem dưỡng mỏng nhẹ:</strong> khóa ẩm vừa đủ.</li>
-                <li><strong>4. Kem chống nắng:</strong> bước quan trọng nhất để bảo vệ da.</li>
-            </ul>
+    <article>
+
+        <h1>Routine chăm sóc da sáng & tối đơn giản, khoa học</h1>
+
+        <p class="intro">
+            Routine chăm sóc da không cần quá nhiều bước. Điều quan trọng là
+            hiểu làn da, chọn đúng sản phẩm và duy trì đều đặn để da khỏe lâu dài.
+        </p>
+
+        <!-- ROUTINE SÁNG -->
+        <section class="routine-block">
+            <img src="image/routine-cham-toc-da-ban-ngay.webp"
+                 alt="Routine chăm sóc da ban ngày đơn giản và khoa học"
+                 loading="lazy">
+            <div>
+                <h2>Routine chăm sóc da buổi sáng</h2>
+                <ul>
+                    <li>Sữa rửa mặt dịu nhẹ</li>
+                    <li>Toner hoặc serum cấp ẩm</li>
+                    <li>Kem dưỡng mỏng nhẹ</li>
+                    <li>Kem chống nắng SPF 30+</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ROUTINE TỐI -->
+        <section class="routine-block">
+            <img src="image/routine-cham-toc-da-buoi-toi-01.jpg"
+                 alt="Routine chăm sóc da buổi tối giúp phục hồi da"
+                 loading="lazy">
+            <div>
+                <h2>Routine chăm sóc da buổi tối</h2>
+                <ul>
+                    <li>Tẩy trang</li>
+                    <li>Sữa rửa mặt</li>
+                    <li>Serum phục hồi hoặc treatment nhẹ</li>
+                    <li>Kem dưỡng khóa ẩm</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="note">
+            💡 <strong>Lưu ý:</strong> Người mới nên duy trì routine tối giản ít nhất 2–3 tuần
+            trước khi thêm hoạt chất mạnh như BHA hay Retinol.
         </div>
-    </section>
 
-    <!-- ROUTINE TỐI -->
-    <section class="routine-block">
-        <img
-            src="image/routine-cham-toc-da-buoi-toi-01.jpg"
-            alt="Routine chăm sóc da buổi tối phục hồi da"
-            loading="lazy"
-        >
-        <div class="routine-content">
-            <h2>Routine buổi tối 🌙</h2>
-            <ul>
-                <li><strong>1. Tẩy trang:</strong> ngay cả khi không makeup.</li>
-                <li><strong>2. Sữa rửa mặt:</strong> làm sạch hoàn toàn bụi bẩn.</li>
-                <li><strong>3. Serum phục hồi / treatment:</strong> dùng với tần suất phù hợp.</li>
-                <li><strong>4. Kem dưỡng:</strong> hỗ trợ phục hồi da trong lúc ngủ.</li>
-            </ul>
-        </div>
-    </section>
+    </article>
 
-    <div class="note">
-        💡 <strong>Lưu ý:</strong> Nếu da nhạy cảm hoặc đang yếu, hãy ưu tiên routine tối giản,
-        tập trung vào phục hồi hàng rào bảo vệ da trước khi dùng các hoạt chất mạnh.
-    </div>
-</div>
+</main>
 
 <footer>
-    © 2025 Chăm Da Khoa Học · Routine đơn giản, hiệu quả lâu dài 💗
+    © 2025 Chăm Da Khoa Học · Routine tối giản, hiệu quả lâu dài 💗
 </footer>
 
 </body>
