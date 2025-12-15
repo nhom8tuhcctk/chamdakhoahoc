@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ | Chăm Da Khoa Học</title>
+    <meta name="description" content="Liên hệ Chăm Da Khoa Học để đóng góp nội dung, đặt câu hỏi skincare hoặc hợp tác chia sẻ kiến thức chăm sóc da khoa học.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff9fb;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #ff99c8;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #ffe5f0;
+            color: #c2185b;
+        }
+
+        /* ===== MAIN ===== */
+        .container {
+            max-width: 900px;
+            margin: 30px auto 40px;
+            padding: 0 20px;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            color: #999;
+        }
+
+        .breadcrumb a {
+            color: #ff84b7;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #c2185b;
+        }
+
+        .intro {
+            font-size: 0.96rem;
+            line-height: 1.6;
+            margin-bottom: 26px;
+        }
+
+        /* ===== CONTACT BOX ===== */
+        .contact-box {
+            background: #fff;
+            border-radius: 18px;
+            padding: 24px;
+            border: 1px solid #ffd1e6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .contact-box h2 {
+            font-size: 1.2rem;
+            color: #d81b60;
+            margin-bottom: 12px;
+        }
+
+        .contact-box p {
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .contact-list li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .contact-list strong {
+            color: #c2185b;
+        }
+
+        /* ===== FORM ===== */
+        form {
+            display: grid;
+            gap: 14px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 12px;
+            border: 1px solid #ffd1e6;
+            font-size: 0.9rem;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            width: fit-content;
+            padding: 10px 22px;
+            border-radius: 24px;
+            border: none;
+            background: #ff84b7;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #ff5fa1;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #ff99c8;
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">Chăm Da Khoa Học</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="basic.html">Cơ bản</a></li>
+                <li><a href="routine.html">Routine</a></li>
+                <li><a href="ingredients.html">Thành phần</a></li>
+                <li><a href="contact.html" class="active">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> › Liên hệ
+    </div>
+
+    <h1>Liên hệ</h1>
+    <p class="intro">
+        Nếu bạn có câu hỏi về chăm sóc da, góp ý nội dung hoặc muốn hợp tác chia sẻ kiến thức skincare,
+        hãy liên hệ với chúng tôi qua thông tin dưới đây.
+    </p>
+
+    <section class="contact-box">
+        <h2>Thông tin liên hệ</h2>
+        <ul class="contact-list">
+            <li><strong>Email:</strong> chamdakhoahoc@gmail.com</li>
+            <li><strong>Fanpage:</strong> Chăm Da Khoa Học</li>
+            <li><strong>Nội dung:</strong> Skincare khoa học – Routine tối giản</li>
+        </ul>
+
+        <h2>Gửi tin nhắn</h2>
+        <form>
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" placeholder="Nhập họ tên của bạn">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email để phản hồi">
+
+            <label for="message">Nội dung</label>
+            <textarea id="message" placeholder="Câu hỏi hoặc góp ý của bạn"></textarea>
+
+            <button type="submit">Gửi liên hệ</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    © 2025 Chăm Da Khoa Học · Kết nối & chia sẻ kiến thức skincare 💗
+</footer>
+
+</body>
+</html>
