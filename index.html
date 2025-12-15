@@ -310,26 +310,21 @@
 </div>
 
 <script>
-    const menuLinks = document.querySelectorAll('.sidebar a[data-section]');
+    const homeLink = document.querySelector('.sidebar a[data-section="home"]');
     const sections = document.querySelectorAll('.section-block');
 
-    menuLinks.forEach(link => {
-        link.addEventListener('click', e => {
+    if (homeLink) {
+        homeLink.addEventListener('click', function (e) {
             e.preventDefault();
-            const id = link.getAttribute('data-section');
 
-            menuLinks.forEach(a => a.classList.remove('active'));
-            link.classList.add('active');
+            document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
 
-            if (id === 'home') {
-                sections.forEach(sec => sec.classList.remove('hidden'));
-            } else {
-                sections.forEach(sec => sec.classList.add('hidden'));
-                document.getElementById(id).classList.remove('hidden');
-            }
+            sections.forEach(sec => sec.classList.remove('hidden'));
         });
-    });
+    }
 </script>
 
 </body>
 </html>
+
