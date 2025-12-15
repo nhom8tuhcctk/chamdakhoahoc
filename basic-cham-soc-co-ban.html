@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <!-- ===== BASIC SEO ===== -->
     <meta charset="UTF-8">
+
     <title>Cách chăm sóc da cơ bản cho người mới bắt đầu | Chăm Da Khoa Học</title>
-    <meta name="description" content="Hướng dẫn cách chăm sóc da cơ bản cho người mới bắt đầu với routine khoa học gồm làm sạch, dưỡng ẩm, chống nắng và treatment an toàn.">
+
+    <meta name="description"
+          content="Hướng dẫn cách chăm sóc da cơ bản cho người mới bắt đầu với routine đơn giản gồm làm sạch, dưỡng ẩm, chống nắng và điều trị khoa học.">
+
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ===== OPEN GRAPH (SEO MXH) ===== -->
+    <!-- OPEN GRAPH -->
     <meta property="og:title" content="Cách chăm sóc da cơ bản cho người mới bắt đầu">
-    <meta property="og:description" content="Routine chăm sóc da cơ bản khoa học giúp da khỏe, ít kích ứng, phù hợp người mới skincare.">
-    <meta property="og:type" content="article">
+    <meta property="og:description" content="Routine skincare đơn giản, khoa học giúp da khỏe lâu dài.">
     <meta property="og:image" content="image/Chống nắng.webp">
 
-    <!-- ===== STYLE ===== -->
     <style>
         * {
             margin: 0;
@@ -28,6 +29,7 @@
             color: #333;
         }
 
+        /* ===== HEADER ===== */
         header {
             background: #ff99c8;
             padding: 12px 40px;
@@ -45,9 +47,10 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 16px;
             font-weight: 500;
+            transition: 0.2s;
         }
 
         nav a:hover {
@@ -55,6 +58,7 @@
             color: #c2185b;
         }
 
+        /* ===== MAIN ===== */
         main {
             max-width: 900px;
             margin: 30px auto 40px;
@@ -62,6 +66,7 @@
             background: #fff;
             border-radius: 18px;
             border: 1px solid #ffd1e6;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
         }
 
         .breadcrumb {
@@ -78,7 +83,7 @@
         h1 {
             font-size: 1.9rem;
             color: #c2185b;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         h2 {
@@ -102,13 +107,16 @@
             margin-left: 20px;
         }
 
+        /* ===== IMAGE STEP ===== */
         .step-image {
-            margin: 12px 0 18px;
             text-align: center;
+            margin: 12px 0 18px;
         }
 
         .step-image img {
-            max-width: 100%;
+            width: 19%;
+            max-width: 180px;
+            height: auto;
             border-radius: 14px;
             border: 1px solid #ffd1e6;
         }
@@ -129,7 +137,11 @@
             color: #fff;
             border-radius: 20px;
             text-decoration: none;
-            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #ff5fa1;
         }
 
         footer {
@@ -139,6 +151,13 @@
             padding: 14px;
             margin-top: 30px;
             font-size: 0.9rem;
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 768px) {
+            .step-image img {
+                width: 40%;
+            }
         }
     </style>
 </head>
@@ -155,23 +174,24 @@
 </header>
 
 <main>
-    <article itemscope itemtype="https://schema.org/Article">
 
-        <div class="breadcrumb">
-            <a href="index.html">Trang chủ</a> ›
-            <a href="basic.html">Cơ bản</a> ›
-            <span itemprop="headline">Cách chăm sóc da cơ bản</span>
-        </div>
+    <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> › 
+        <a href="basic.html">Cơ bản</a> › 
+        Cách chăm sóc da cơ bản
+    </div>
 
-        <h1 itemprop="headline">Cách chăm sóc da cơ bản cho người mới bắt đầu</h1>
+    <article>
 
-        <p itemprop="description">
+        <h1>Cách chăm sóc da cơ bản cho người mới bắt đầu</h1>
+
+        <p>
             Nếu bạn mới bắt đầu skincare, hãy ưu tiên routine đơn giản nhưng đúng khoa học
             để giúp da khỏe lâu dài và hạn chế kích ứng.
         </p>
 
         <div class="note">
-            🎯 <strong>Nguyên tắc:</strong> Ít nhưng đúng – tập trung xây dựng nền da khỏe.
+            🎯 <strong>Nguyên tắc vàng:</strong> Ít nhưng đúng – không chạy theo trend.
         </div>
 
         <h2>4 bước chăm sóc da cơ bản</h2>
@@ -180,10 +200,9 @@
         <div class="step-image">
             <img src="image/Cleanser.jpg"
                  alt="Sữa rửa mặt dịu nhẹ cho routine chăm sóc da cơ bản"
-                 loading="lazy"
-                 itemprop="image">
+                 loading="lazy">
         </div>
-        <p>Sử dụng sữa rửa mặt dịu nhẹ, độ pH 5.5–6 để làm sạch mà không phá vỡ hàng rào bảo vệ da.</p>
+        <p>Sử dụng sữa rửa mặt dịu nhẹ, pH 5.5–6 để không phá vỡ hàng rào bảo vệ da.</p>
 
         <h3>2. Dưỡng ẩm (Moisturizer)</h3>
         <div class="step-image">
@@ -196,10 +215,10 @@
         <h3>3. Chống nắng (Sunscreen)</h3>
         <div class="step-image">
             <img src="image/Chống nắng.webp"
-                 alt="Kem chống nắng bảo vệ da khỏi tia UVA UVB"
+                 alt="Kem chống nắng bảo vệ da khỏi tia UV"
                  loading="lazy">
         </div>
-        <p>Sử dụng kem chống nắng SPF 30+ mỗi sáng và thoa lại khi cần.</p>
+        <p>SPF 30+ trở lên, bôi mỗi sáng và thoa lại khi cần.</p>
 
         <h3>4. Điều trị (Treatment)</h3>
         <div class="step-image">
@@ -209,11 +228,12 @@
         </div>
         <p>Chỉ thêm treatment khi da đã ổn định 3 bước cơ bản.</p>
 
-        <div style="margin-top:24px; text-align:right">
+        <div style="margin-top:22px; text-align:right">
             <a href="basic.html" class="btn">← Quay lại Cơ bản</a>
         </div>
 
     </article>
+
 </main>
 
 <footer>
