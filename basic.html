@@ -2,177 +2,201 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Cơ bản | Chăm Da Khoa Học</title>
+
+    <!-- SEO CORE -->
+    <title>Chăm sóc da cơ bản cho người mới | Chăm Da Khoa Học</title>
+    <meta name="description" content="Tổng hợp kiến thức chăm sóc da cơ bản cho người mới: nhận biết loại da, routine sáng tối, các bước skincare và sai lầm thường gặp.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nhom8tuhcctk.github.io/chamdakhoahoc/basic.html">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chăm sóc da cơ bản cho người mới">
+    <meta property="og:description" content="Trang tổng hợp kiến thức nền tảng về chăm sóc da khoa học cho người mới bắt đầu.">
+    <meta property="og:image" content="https://nhom8tuhcctk.github.io/chamdakhoahoc/image/skin-barrier.jpg">
+
+    <!-- SCHEMA CATEGORY -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Chăm sóc da cơ bản",
+      "description": "Danh mục kiến thức chăm sóc da cơ bản cho người mới",
+      "url": "https://nhom8tuhcctk.github.io/chamdakhoahoc/basic.html"
+    }
+    </script>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", Arial, sans-serif;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Segoe UI",Arial,sans-serif;
         }
 
-        body {
-            background-color: #fff9fb;
-            color: #333;
+        body{
+            background:#fff9fb;
+            color:#333;
+            line-height:1.6;
         }
 
         /* HEADER */
-        header {
-            width: 100%;
-            background: #ff99c8;
-            color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 40px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        header{
+            background:#ff99c8;
+            color:#fff;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:12px 40px;
+            position:sticky;
+            top:0;
+            z-index:100;
         }
 
-        .logo span {
-            font-weight: 700;
-            font-size: 1.3rem;
+        .logo span{
+            font-weight:700;
+            font-size:1.3rem;
         }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-            padding: 6px 10px;
-            border-radius: 16px;
-            transition: background 0.2s, color 0.2s;
+        nav a{
+            text-decoration:none;
+            color:#fff;
+            padding:6px 12px;
+            border-radius:16px;
         }
 
-        nav a:hover {
-            background: #ffe5f0;
-            color: #c2185b;
+        nav a:hover{
+            background:#ffe5f0;
+            color:#c2185b;
         }
 
-        /* WRAPPER TRANG CƠ BẢN */
-        .container {
-            max-width: 1000px;
-            margin: 30px auto 40px;
-            padding: 0 20px 30px;
+        /* CONTAINER */
+        .container{
+            max-width:1050px;
+            margin:30px auto 40px;
+            padding:0 20px;
         }
 
-        .breadcrumb {
-            font-size: 0.85rem;
-            margin-bottom: 10px;
-            color: #999;
+        .breadcrumb{
+            font-size:.85rem;
+            margin-bottom:10px;
+            color:#888;
         }
 
-        .breadcrumb a {
-            color: #ff84b7;
-            text-decoration: none;
+        .breadcrumb a{
+            color:#ff5fa1;
+            text-decoration:none;
         }
 
-        .breadcrumb a:hover {
-            text-decoration: underline;
+        h1{
+            font-size:1.9rem;
+            color:#c2185b;
+            margin-bottom:10px;
         }
 
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 6px;
-            color: #c2185b;
+        .intro{
+            font-size:.96rem;
+            margin-bottom:20px;
         }
 
-        .intro {
-            font-size: 0.96rem;
-            line-height: 1.6;
-            margin-bottom: 18px;
+        /* HERO IMAGE */
+        .category-img{
+            width:40%;
+            display:block;
+            margin:18px auto;
+            border-radius:16px;
+            border:1px solid #ffd1e6;
         }
 
-        /* DANH SÁCH BÀI VIẾT */
-        .post-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 18px;
+        /* GRID */
+        .post-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:18px;
+            margin-top:20px;
         }
 
-        .post-card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 16px 14px 18px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-            border: 1px solid #ffd1e6;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        article{
+            background:#fff;
+            border-radius:16px;
+            padding:16px;
+            border:1px solid #ffd1e6;
+            box-shadow:0 3px 10px rgba(0,0,0,.05);
+            display:flex;
+            flex-direction:column;
         }
 
-        .post-tag {
-            display: inline-block;
-            font-size: 0.78rem;
-            padding: 4px 10px;
-            border-radius: 999px;
-            background: #ffe5f3;
-            color: #d81b60;
-            margin-bottom: 6px;
+        .post-thumb{
+            width:100%;
+            border-radius:12px;
+            margin-bottom:10px;
         }
 
-        .post-card h2 {
-            font-size: 1.1rem;
-            color: #d81b60;
-            margin: 4px 0 6px;
+        .post-tag{
+            font-size:.78rem;
+            padding:4px 10px;
+            border-radius:999px;
+            background:#ffe5f3;
+            color:#d81b60;
+            display:inline-block;
+            margin-bottom:6px;
         }
 
-        .post-meta {
-            font-size: 0.8rem;
-            color: #888;
-            margin-bottom: 8px;
+        article h2{
+            font-size:1.1rem;
+            color:#d81b60;
+            margin-bottom:6px;
         }
 
-        .post-excerpt {
-            font-size: 0.92rem;
-            line-height: 1.5;
-            margin-bottom: 10px;
+        .post-meta{
+            font-size:.8rem;
+            color:#888;
+            margin-bottom:8px;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 8px 16px;
-            border-radius: 20px;
-            background: #ff84b7;
-            color: #fff;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            align-self: flex-start;
+        .post-excerpt{
+            font-size:.92rem;
+            margin-bottom:10px;
         }
 
-        .btn:hover {
-            background: #ff5fa1;
+        .btn{
+            margin-top:auto;
+            align-self:flex-start;
+            padding:8px 16px;
+            border-radius:20px;
+            background:#ff84b7;
+            color:#fff;
+            text-decoration:none;
+            font-size:.9rem;
         }
 
-        footer {
-            text-align: center;
-            padding: 14px 10px 18px;
-            background: #ff99c8;
-            color: #ffffff;
-            font-size: 0.9rem;
-            margin-top: 14px;
+        .btn:hover{
+            background:#ff5fa1;
         }
 
-        @media (max-width: 600px) {
-            header {
-                padding: 10px 16px;
-            }
-            .container {
-                margin: 20px 10px 30px;
-                padding: 0 6px 20px;
-            }
+        footer{
+            text-align:center;
+            background:#ff99c8;
+            color:#fff;
+            padding:16px;
+            font-size:.9rem;
+        }
+
+        @media(max-width:768px){
+            header{padding:10px 16px}
+            .category-img{width:85%}
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -187,72 +211,80 @@
     </nav>
 </header>
 
-<div class="container">
+<main class="container">
+
     <div class="breadcrumb">
-        <a href="index.html">Trang chủ</a> › Cơ bản
+        <a href="index.html">Trang chủ</a> › Chăm sóc da cơ bản
     </div>
 
-    <h1>Chuyên mục: Chăm sóc da cơ bản</h1>
+    <h1>Chăm sóc da cơ bản cho người mới bắt đầu</h1>
+
     <p class="intro">
-        Đây là nơi tổng hợp các bài viết nền tảng về chăm sóc da: cách xác định loại da, xây routine sáng – tối,
-        những sai lầm thường gặp và các nguyên tắc giúp da khỏe lâu dài. Hãy chọn bài phù hợp với bạn để đọc chi tiết.
+        Chuyên mục này tổng hợp các kiến thức nền tảng nhất về chăm sóc da khoa học.
+        Nếu bạn mới skincare, hãy bắt đầu từ đây để hiểu da đúng cách và tránh sai lầm phổ biến.
     </p>
 
-    <div class="post-grid">
+    <img src="image/skin-barrier.jpg"
+         class="category-img"
+         alt="Chăm sóc da cơ bản cho người mới"
+         loading="lazy">
 
-        <!-- BÀI 1 -->
-        <article class="post-card">
+    <section class="post-grid">
+
+        <article>
+            <img src="image/duong-am-phuc-hoi.jpg" class="post-thumb"
+                 alt="Chăm sóc da cơ bản cho người mới" loading="lazy">
             <span class="post-tag">Cơ bản</span>
             <h2>Cách chăm sóc da cơ bản cho người mới bắt đầu</h2>
-            <div class="post-meta">Thời gian đọc ~ 5 phút</div>
+            <div class="post-meta">⏱ 5 phút đọc</div>
             <p class="post-excerpt">
-                Bạn mới bắt đầu skincare và thấy rối vì quá nhiều bước? Bài viết này giúp bạn quay về
-                4 bước nền tảng nhưng hiệu quả, đủ để da khỏe và ổn định lâu dài.
+                4 bước skincare tối giản giúp da khỏe và ổn định lâu dài.
             </p>
             <a href="basic-cham-soc-co-ban.html" class="btn">Đọc bài</a>
         </article>
 
-        <!-- BÀI 2 -->
-        <article class="post-card">
+        <article>
+            <img src="image/skin-barrier.jpg" class="post-thumb"
+                 alt="Cách nhận biết loại da" loading="lazy">
             <span class="post-tag">Loại da</span>
             <h2>Cách nhận biết loại da: dầu, khô, hỗn hợp, nhạy cảm</h2>
-            <div class="post-meta">Thời gian đọc ~ 4 phút</div>
+            <div class="post-meta">⏱ 4 phút đọc</div>
             <p class="post-excerpt">
-                Không cần máy soi da phức tạp. Một vài dấu hiệu đơn giản sẽ giúp bạn hiểu mình thuộc
-                loại da nào để chọn sữa rửa mặt, kem dưỡng và chống nắng phù hợp.
+                Xác định đúng loại da để chọn sản phẩm phù hợp.
             </p>
             <a href="basic-phan-biet-loai-da.html" class="btn">Đọc bài</a>
         </article>
 
-        <!-- BÀI 3 -->
-        <article class="post-card">
+        <article>
+            <img src="image/duong-am-phuc-hoi.jpg" class="post-thumb"
+                 alt="Routine sáng tối cho người bận rộn" loading="lazy">
             <span class="post-tag">Routine</span>
-            <h2>Gợi ý routine sáng – tối đơn giản cho người bận rộn</h2>
-            <div class="post-meta">Thời gian đọc ~ 4 phút</div>
+            <h2>Routine sáng – tối đơn giản cho người bận rộn</h2>
+            <div class="post-meta">⏱ 4 phút đọc</div>
             <p class="post-excerpt">
-                Nếu bạn là người bận rộn, không có nhiều thời gian skincare, hãy tham khảo routine sáng – tối
-                chỉ 3–4 bước nhưng vẫn bảo vệ và phục hồi da hiệu quả.
+                Routine 3–4 bước nhưng vẫn bảo vệ da hiệu quả.
             </p>
             <a href="basic-routine-sang-toi.html" class="btn">Đọc bài</a>
         </article>
 
-        <!-- BÀI 4 -->
-        <article class="post-card">
+        <article>
+            <img src="image/phuc-hoi-skin-barrier.jpg" class="post-thumb"
+                 alt="Sai lầm chăm sóc da thường gặp" loading="lazy">
             <span class="post-tag">Sai lầm</span>
-            <h2>6 sai lầm chăm sóc da khiến da càng yếu đi</h2>
-            <div class="post-meta">Thời gian đọc ~ 3 phút</div>
+            <h2>6 sai lầm chăm sóc da khiến da yếu đi</h2>
+            <div class="post-meta">⏱ 3 phút đọc</div>
             <p class="post-excerpt">
-                Tẩy da chết quá tay, dùng quá nhiều treatment, đổi sản phẩm liên tục, bỏ qua chống nắng...
-                Xem bạn đang mắc phải bao nhiêu trong số này.
+                Những thói quen tưởng đúng nhưng lại hại da.
             </p>
             <a href="basic-sai-lam-thuong-gap.html" class="btn">Đọc bài</a>
         </article>
 
-    </div>
-</div>
+    </section>
+
+</main>
 
 <footer>
-    © 2025 Chăm Da Khoa Học · Routine đơn giản, hiệu quả lâu dài 💗
+    © 2025 Chăm Da Khoa Học · Kiến thức skincare chuẩn khoa học 💗
 </footer>
 
 </body>
