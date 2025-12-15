@@ -2,290 +2,30 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-
-    <!-- SEO CORE -->
     <title>Chăm sóc da cơ bản cho người mới | Chăm Da Khoa Học</title>
-    <meta name="description" content="Tổng hợp kiến thức chăm sóc da cơ bản cho người mới: nhận biết loại da, routine sáng tối, các bước skincare và sai lầm thường gặp.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://nhom8tuhcctk.github.io/chamdakhoahoc/basic.html">
-
+    <meta name="description" content="Tổng hợp kiến thức chăm sóc da cơ bản: phân biệt loại da, routine sáng tối và những sai lầm thường gặp.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Chăm sóc da cơ bản cho người mới">
-    <meta property="og:description" content="Trang tổng hợp kiến thức nền tảng về chăm sóc da khoa học cho người mới bắt đầu.">
-    <meta property="og:image" content="https://nhom8tuhcctk.github.io/chamdakhoahoc/image/skin-barrier.jpg">
-
-    <!-- SCHEMA CATEGORY -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Chăm sóc da cơ bản",
-      "description": "Danh mục kiến thức chăm sóc da cơ bản cho người mới",
-      "url": "https://nhom8tuhcctk.github.io/chamdakhoahoc/basic.html"
-    }
-    </script>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:"Segoe UI",Arial,sans-serif;
-        }
-
-        body{
-            background:#fff9fb;
-            color:#333;
-            line-height:1.6;
-        }
-
-        /* HEADER */
-        header{
-            background:#ff99c8;
-            color:#fff;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:12px 40px;
-            position:sticky;
-            top:0;
-            z-index:100;
-        }
-
-        .logo span{
-            font-weight:700;
-            font-size:1.3rem;
-        }
-
-        nav ul{
-            list-style:none;
-            display:flex;
-            gap:20px;
-        }
-
-        nav a{
-            text-decoration:none;
-            color:#fff;
-            padding:6px 12px;
-            border-radius:16px;
-        }
-
-        nav a:hover{
-            background:#ffe5f0;
-            color:#c2185b;
-        }
-
-        /* CONTAINER */
-        .container{
-            max-width:1050px;
-            margin:30px auto 40px;
-            padding:0 20px;
-        }
-
-        .breadcrumb{
-            font-size:.85rem;
-            margin-bottom:10px;
-            color:#888;
-        }
-
-        .breadcrumb a{
-            color:#ff5fa1;
-            text-decoration:none;
-        }
-
-        h1{
-            font-size:1.9rem;
-            color:#c2185b;
-            margin-bottom:10px;
-        }
-
-        .intro{
-            font-size:.96rem;
-            margin-bottom:20px;
-        }
-
-        /* HERO IMAGE */
-        .category-img{
-            width:40%;
-            display:block;
-            margin:18px auto;
-            border-radius:16px;
-            border:1px solid #ffd1e6;
-        }
-
-        /* GRID */
-        .post-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-            gap:18px;
-            margin-top:20px;
-        }
-
-        article{
-            background:#fff;
-            border-radius:16px;
-            padding:16px;
-            border:1px solid #ffd1e6;
-            box-shadow:0 3px 10px rgba(0,0,0,.05);
-            display:flex;
-            flex-direction:column;
-        }
-
-        .post-thumb{
-            width:100%;
-            border-radius:12px;
-            margin-bottom:10px;
-        }
-
-        .post-tag{
-            font-size:.78rem;
-            padding:4px 10px;
-            border-radius:999px;
-            background:#ffe5f3;
-            color:#d81b60;
-            display:inline-block;
-            margin-bottom:6px;
-        }
-
-        article h2{
-            font-size:1.1rem;
-            color:#d81b60;
-            margin-bottom:6px;
-        }
-
-        .post-meta{
-            font-size:.8rem;
-            color:#888;
-            margin-bottom:8px;
-        }
-
-        .post-excerpt{
-            font-size:.92rem;
-            margin-bottom:10px;
-        }
-
-        .btn{
-            margin-top:auto;
-            align-self:flex-start;
-            padding:8px 16px;
-            border-radius:20px;
-            background:#ff84b7;
-            color:#fff;
-            text-decoration:none;
-            font-size:.9rem;
-        }
-
-        .btn:hover{
-            background:#ff5fa1;
-        }
-
-        footer{
-            text-align:center;
-            background:#ff99c8;
-            color:#fff;
-            padding:16px;
-            font-size:.9rem;
-        }
-
-        @media(max-width:768px){
-            header{padding:10px 16px}
-            .category-img{width:85%}
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <div class="logo">
-        <span>Chăm Da Khoa Học</span>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="basic.html">Cơ bản</a></li>
-        </ul>
-    </nav>
+    <h1>Chăm sóc da cơ bản</h1>
 </header>
 
-<main class="container">
+<div class="container">
+    <img src="image/02.jpg" alt="Kiến thức chăm sóc da cơ bản">
 
-    <div class="breadcrumb">
-        <a href="index.html">Trang chủ</a> › Chăm sóc da cơ bản
-    </div>
+    <ul>
+        <li><a href="basic-cham-soc-co-ban.html">Chăm sóc da cơ bản là gì?</a></li>
+        <li><a href="basic-phan-biet-loai-da.html">Cách phân biệt loại da</a></li>
+        <li><a href="basic-routine-sang-toi.html">Routine sáng – tối chuẩn</a></li>
+        <li><a href="basic-sai-lam-thuong-gap.html">Sai lầm chăm sóc da thường gặp</a></li>
+    </ul>
 
-    <h1>Chăm sóc da cơ bản cho người mới bắt đầu</h1>
-
-    <p class="intro">
-        Chuyên mục này tổng hợp các kiến thức nền tảng nhất về chăm sóc da khoa học.
-        Nếu bạn mới skincare, hãy bắt đầu từ đây để hiểu da đúng cách và tránh sai lầm phổ biến.
-    </p>
-
-    <img src="image/skin-barrier.jpg"
-         class="category-img"
-         alt="Chăm sóc da cơ bản cho người mới"
-         loading="lazy">
-
-    <section class="post-grid">
-
-        <article>
-            <img src="image/duong-am-phuc-hoi.jpg" class="post-thumb"
-                 alt="Chăm sóc da cơ bản cho người mới" loading="lazy">
-            <span class="post-tag">Cơ bản</span>
-            <h2>Cách chăm sóc da cơ bản cho người mới bắt đầu</h2>
-            <div class="post-meta">⏱ 5 phút đọc</div>
-            <p class="post-excerpt">
-                4 bước skincare tối giản giúp da khỏe và ổn định lâu dài.
-            </p>
-            <a href="basic-cham-soc-co-ban.html" class="btn">Đọc bài</a>
-        </article>
-
-        <article>
-            <img src="image/skin-barrier.jpg" class="post-thumb"
-                 alt="Cách nhận biết loại da" loading="lazy">
-            <span class="post-tag">Loại da</span>
-            <h2>Cách nhận biết loại da: dầu, khô, hỗn hợp, nhạy cảm</h2>
-            <div class="post-meta">⏱ 4 phút đọc</div>
-            <p class="post-excerpt">
-                Xác định đúng loại da để chọn sản phẩm phù hợp.
-            </p>
-            <a href="basic-phan-biet-loai-da.html" class="btn">Đọc bài</a>
-        </article>
-
-        <article>
-            <img src="image/duong-am-phuc-hoi.jpg" class="post-thumb"
-                 alt="Routine sáng tối cho người bận rộn" loading="lazy">
-            <span class="post-tag">Routine</span>
-            <h2>Routine sáng – tối đơn giản cho người bận rộn</h2>
-            <div class="post-meta">⏱ 4 phút đọc</div>
-            <p class="post-excerpt">
-                Routine 3–4 bước nhưng vẫn bảo vệ da hiệu quả.
-            </p>
-            <a href="basic-routine-sang-toi.html" class="btn">Đọc bài</a>
-        </article>
-
-        <article>
-            <img src="image/phuc-hoi-skin-barrier.jpg" class="post-thumb"
-                 alt="Sai lầm chăm sóc da thường gặp" loading="lazy">
-            <span class="post-tag">Sai lầm</span>
-            <h2>6 sai lầm chăm sóc da khiến da yếu đi</h2>
-            <div class="post-meta">⏱ 3 phút đọc</div>
-            <p class="post-excerpt">
-                Những thói quen tưởng đúng nhưng lại hại da.
-            </p>
-            <a href="basic-sai-lam-thuong-gap.html" class="btn">Đọc bài</a>
-        </article>
-
-    </section>
-
-</main>
-
-<footer>
-    © 2025 Chăm Da Khoa Học · Kiến thức skincare chuẩn khoa học 💗
-</footer>
+    <a href="index.html" class="back">← Quay lại trang chủ</a>
+</div>
 
 </body>
 </html>
