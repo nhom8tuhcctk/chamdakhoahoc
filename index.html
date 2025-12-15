@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
 
+    <!-- SEO CƠ BẢN -->
+    <title>Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới</title>
+    <meta name="description"
+          content="Chăm Da Khoa Học chia sẻ kiến thức skincare dựa trên nghiên cứu khoa học: routine cơ bản, hàng rào bảo vệ da và cách chọn sản phẩm phù hợp.">
+    <meta name="keywords"
+          content="chăm da khoa học, skincare cơ bản, routine skincare, hàng rào bảo vệ da">
+    <meta name="author" content="Nhóm 8 – Chăm Da Khoa Học">
+
+    <!-- GOOGLE SEARCH CONSOLE -->
     <meta name="google-site-verification"
           content="td3gp0ebjPeyJ-wn-ZEuKxO-C9NCuemqSMgt-WYbhzQ">
 
-    <title>Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới</title>
-
-    <meta name="description"
-          content="Chăm Da Khoa Học chia sẻ kiến thức skincare dựa trên nghiên cứu khoa học: hiểu làn da, chọn sản phẩm phù hợp và xây dựng routine thông minh.">
-
+    <!-- MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -28,15 +33,15 @@
         }
 
         /* SIDEBAR */
-        .sidebar {
+        nav.sidebar {
             width: 230px;
             background: #ff99c8;
             min-height: 100vh;
             padding: 20px 15px;
-            color: #fff;
             position: fixed;
             top: 0;
             left: 0;
+            color: #fff;
         }
 
         .logo {
@@ -46,33 +51,31 @@
             text-align: center;
         }
 
-        .sidebar ul {
+        nav ul {
             list-style: none;
         }
 
-        .sidebar li {
+        nav li {
             margin-bottom: 10px;
         }
 
-        .sidebar a {
+        nav a {
             color: #fff;
             text-decoration: none;
             display: block;
             padding: 10px 12px;
             border-radius: 10px;
-            font-size: 1rem;
-            transition: 0.2s;
         }
 
-        .sidebar a:hover,
-        .sidebar a.active {
+        nav a:hover,
+        nav a.active {
             background: #ffe5f0;
             color: #c2185b;
             font-weight: 600;
         }
 
-        /* MAIN CONTENT */
-        .main-content {
+        /* MAIN */
+        main {
             margin-left: 250px;
             padding: 20px 30px 30px;
             width: calc(100% - 250px);
@@ -89,12 +92,10 @@
         /* HERO */
         .hero {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             gap: 40px;
             padding: 50px;
             background: linear-gradient(135deg, #ffe5f0, #ffffff);
-            border-radius: 16px;
+            border-radius: 15px;
         }
 
         .hero-left {
@@ -103,13 +104,12 @@
 
         .hero-left h1 {
             color: #c2185b;
+            margin-bottom: 10px;
             font-size: 2rem;
-            margin-bottom: 12px;
         }
 
         .hero-left p {
             line-height: 1.7;
-            font-size: 1rem;
         }
 
         .hero-right {
@@ -124,21 +124,19 @@
             height: 200px;
             object-fit: cover;
             border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
         }
 
-        /* SECTIONS */
         h2 {
             color: #c2185b;
-            margin-bottom: 10px;
-            font-size: 1.5rem;
+            margin: 16px 0 10px;
         }
 
+        /* POST LIST */
         .post-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
             gap: 20px;
-            margin-top: 15px;
         }
 
         .post-card {
@@ -146,18 +144,16 @@
             padding: 18px;
             border-radius: 15px;
             border: 1px solid #ffd1e6;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
         }
 
         .post-card h3 {
-            color: #d81b60;
             margin-bottom: 6px;
+            color: #d81b60;
         }
 
         .post-card p {
-            font-size: 0.95rem;
             line-height: 1.6;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .btn {
@@ -167,43 +163,15 @@
             color: #fff;
             border-radius: 20px;
             text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .btn:hover {
-            background: #ff5fa1;
-        }
-
-        /* CONTACT */
-        .contact-box {
-            background: #ffeef6;
-            padding: 20px;
-            border-radius: 15px;
-            border: 1px solid #ffd1e6;
-            max-width: 500px;
-        }
-
-        .contact-box label {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .contact-box input,
-        .contact-box textarea {
-            width: 100%;
-            padding: 8px;
-            border-radius: 8px;
-            border: 1px solid #ffc1dc;
-            margin-bottom: 10px;
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 40px;
             padding: 12px;
             text-align: center;
             background: #ff99c8;
             color: #fff;
-            border-radius: 12px;
+            border-radius: 10px;
         }
 
         /* MOBILE */
@@ -212,13 +180,13 @@
                 display: block;
             }
 
-            .sidebar {
-                position: relative;
+            nav.sidebar {
                 width: 100%;
+                position: relative;
                 min-height: auto;
             }
 
-            .main-content {
+            main {
                 margin-left: 0;
                 width: 100%;
                 padding: 15px;
@@ -226,13 +194,17 @@
 
             .hero {
                 flex-direction: column;
-                padding: 30px 20px;
                 text-align: center;
+                padding: 30px 20px;
             }
 
             .hero-left,
             .hero-right {
                 width: 100%;
+            }
+
+            .hero-right img {
+                height: 180px;
             }
         }
     </style>
@@ -240,91 +212,92 @@
 
 <body>
 
-<div class="sidebar">
+<nav class="sidebar">
     <div class="logo">Chăm Da Khoa Học</div>
     <ul>
-        <li><a href="#" data-section="home" class="active">🏠 Trang chủ</a></li>
-        <li><a href="#" data-section="basic">📘 Cơ bản</a></li>
-        <li><a href="#" data-section="routine">✨ Routine</a></li>
-        <li><a href="#" data-section="ingredients">🔬 Thành phần</a></li>
-        <li><a href="#" data-section="contact">📩 Liên hệ</a></li>
+        <li><a href="#" data-section="home" class="active">Trang chủ</a></li>
+        <li><a href="#" data-section="basic">Cơ bản</a></li>
+        <li><a href="#" data-section="routine">Routine</a></li>
+        <li><a href="#" data-section="ingredients">Thành phần</a></li>
+        <li><a href="#" data-section="contact">Liên hệ</a></li>
     </ul>
-</div>
+</nav>
 
-<div class="main-content">
+<main>
 
-    <section id="home" class="section-block">
-        <div class="hero">
-            <div class="hero-left">
-                <h1>Chăm da dựa trên khoa học ✨</h1>
-                <p>
-                    Website chia sẻ kiến thức chăm sóc da dựa trên nghiên cứu khoa học,
-                    giúp bạn hiểu làn da, chọn sản phẩm phù hợp và xây routine thông minh.
-                </p>
-            </div>
-            <div class="hero-right">
-                <img src="01.jpg" alt="Skincare khoa học">
-                <img src="02.jpg" alt="Routine chăm sóc da">
-            </div>
+<section id="home" class="section-block">
+    <div class="hero">
+        <div class="hero-left">
+            <h1>Chăm da dựa trên khoa học</h1>
+            <p>
+                Website chia sẻ kiến thức chăm sóc da dựa trên nghiên cứu khoa học,
+                giúp bạn hiểu da, chọn sản phẩm phù hợp và xây dựng routine hiệu quả.
+            </p>
         </div>
-    </section>
 
-    <section id="basic" class="section-block">
-        <h2>Kiến thức chăm sóc da cơ bản</h2>
-        <div class="post-list">
-            <div class="post-card">
-                <h3>Hàng rào bảo vệ da là gì?</h3>
-                <p>Vai trò của skin barrier và cách phục hồi khi da yếu.</p>
-                <a href="hangraobaoveda.html" class="btn">Đọc bài</a>
-            </div>
+        <div class="hero-right">
+            <img src="image/01.jpg"
+                 alt="Routine chăm sóc da khoa học cho người mới"
+                 loading="lazy">
+
+            <img src="image/02.jpg"
+                 alt="Chăm sóc da đúng cách dựa trên khoa học"
+                 loading="lazy">
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="routine" class="section-block">
-        <h2>Routine theo loại da</h2>
-        <p>Da dầu – da khô – da nhạy cảm: chọn routine đơn giản, hiệu quả.</p>
-    </section>
+<section id="basic" class="section-block">
+    <h2>Kiến thức chăm sóc da cơ bản</h2>
 
-    <section id="ingredients" class="section-block">
-        <h2>Hoạt chất phổ biến</h2>
-        <p>Niacinamide, AHA, BHA, Retinol, HA...</p>
-    </section>
-
-    <section id="contact" class="section-block">
-        <h2>Liên hệ & Góp ý</h2>
-        <div class="contact-box">
-            <label>Họ và tên</label>
-            <input type="text">
-            <label>Email</label>
-            <input type="email">
-            <label>Nội dung</label>
-            <textarea rows="4"></textarea>
-            <button class="btn">Gửi</button>
+    <div class="post-list">
+        <div class="post-card">
+            <h3>Hàng rào bảo vệ da là gì?</h3>
+            <p>
+                Hiểu đúng skin barrier giúp bạn chăm sóc da hiệu quả và tránh các sai lầm thường gặp.
+            </p>
+            <a href="hangraobaoveda.html" class="btn">Đọc bài</a>
         </div>
-    </section>
 
-    <footer>
-        © 2025 Chăm Da Khoa Học · Kiến thức chuẩn – hiệu quả lâu dài 💗
-    </footer>
+        <div class="post-card">
+            <h3>Những sai lầm khi chăm sóc da</h3>
+            <p>
+                Dùng quá nhiều sản phẩm, bỏ qua chống nắng, thay đổi routine liên tục.
+            </p>
+            <a href="basic-sai-lam-cham-soc-da.html" class="btn">Xem bài</a>
+        </div>
+    </div>
+</section>
 
-</div>
+<footer>
+    © 2025 Chăm Da Khoa Học · Kiến thức chuẩn – hiệu quả lâu dài
+</footer>
+
+</main>
 
 <script>
-    const homeLink = document.querySelector('.sidebar a[data-section="home"]');
-    const sections = document.querySelectorAll('.section-block');
+const menuLinks = document.querySelectorAll('nav a[data-section]');
+const sections = document.querySelectorAll('.section-block');
 
-    if (homeLink) {
-        homeLink.addEventListener('click', function (e) {
-            e.preventDefault();
+menuLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
 
-            document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
-            this.classList.add('active');
+        menuLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
 
-            sections.forEach(sec => sec.classList.remove('hidden'));
+        const id = link.dataset.section;
+
+        sections.forEach(section => {
+            if (id === 'home') {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.toggle('hidden', section.id !== id);
+            }
         });
-    }
+    });
+});
 </script>
 
 </body>
 </html>
-
