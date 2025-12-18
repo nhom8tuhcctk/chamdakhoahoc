@@ -2,6 +2,18 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNR6VPYE71"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GNR6VPYE71');
+    </script>
+    <!-- End GA4 -->
+
+    <!-- SEO -->
     <title>Liên hệ | Chăm Da Khoa Học</title>
     <meta name="description" content="Liên hệ Chăm Da Khoa Học để đóng góp nội dung, đặt câu hỏi skincare hoặc hợp tác chia sẻ kiến thức chăm sóc da khoa học.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +27,7 @@
         }
 
         body {
-            background-color: #fff9fb;
+            background: #fff9fb;
             color: #333;
         }
 
@@ -32,8 +44,8 @@
             margin: auto;
             padding: 14px 24px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
@@ -50,14 +62,12 @@
         }
 
         nav a {
-            display: block;
             padding: 8px 16px;
             border-radius: 20px;
             text-decoration: none;
             color: #fff;
             font-size: 0.95rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
+            transition: 0.2s;
         }
 
         nav a:hover,
@@ -67,7 +77,7 @@
         }
 
         /* ===== MAIN ===== */
-        .container {
+        main {
             max-width: 900px;
             margin: 30px auto 40px;
             padding: 0 20px;
@@ -80,27 +90,27 @@
         }
 
         .breadcrumb a {
-            color: #ff84b7;
             text-decoration: none;
+            color: #ff84b7;
         }
 
         h1 {
             font-size: 1.8rem;
-            margin-bottom: 10px;
             color: #c2185b;
+            margin-bottom: 10px;
         }
 
         .intro {
             font-size: 0.96rem;
             line-height: 1.6;
-            margin-bottom: 26px;
+            margin-bottom: 24px;
         }
 
         /* ===== CONTACT BOX ===== */
         .contact-box {
             background: #fff;
-            border-radius: 18px;
             padding: 24px;
+            border-radius: 18px;
             border: 1px solid #ffd1e6;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
@@ -113,7 +123,7 @@
 
         .contact-box p {
             font-size: 0.95rem;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
             line-height: 1.6;
         }
 
@@ -163,9 +173,7 @@
             background: #ff84b7;
             color: #fff;
             font-size: 0.95rem;
-            font-weight: 500;
             cursor: pointer;
-            transition: background 0.2s;
         }
 
         button:hover {
@@ -214,7 +222,7 @@
     </div>
 </header>
 
-<main class="container">
+<main>
     <div class="breadcrumb">
         <a href="index.html">Trang chủ</a> › Liên hệ
     </div>
@@ -250,7 +258,7 @@
 </main>
 
 <footer>
-    © 2025 Chăm Da Khoa Học · Kết nối & chia sẻ kiến thức skincare 💗
+    © 2025 Chăm Da Khoa Học · Kết nối & chia sẻ kiến thức skincare
 </footer>
 
 </body>
