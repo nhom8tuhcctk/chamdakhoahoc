@@ -11,26 +11,25 @@
         gtag('js', new Date());
         gtag('config', 'G-GNR6VPYE71');
     </script>
-
-    <title>Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới</title>
+    <title>Chăm Da Khoa Học – Hướng Dẫn Skincare Cơ Bản & Routine</title>
     
     <meta name="description"
-          content="Chăm Da Khoa Học chia sẻ kiến thức chăm sóc da cơ bản, routine tối giản và hàng rào bảo vệ da chuẩn y khoa. Hướng dẫn người mới bắt đầu chăm da hiệu quả.">
+          content="Chăm Da Khoa Học chia sẻ kiến thức chăm sóc da cơ bản, routine tối giản và cách phục hồi hàng rào bảo vệ da chuẩn y khoa cho người mới bắt đầu.">
     
     <meta name="keywords"
           content="chăm da khoa học, chăm sóc da cơ bản, routine skincare, hàng rào bảo vệ da, kiến thức skincare">
     <meta name="author" content="Nhóm 8 – Chăm Da Khoa Học">
     
-    <link rel="canonical" href="https://nhom8tuhcctk.github.io/cham-da-khoa-hoc/">
+    <link rel="canonical" href="https://nhom8tuhcctk.github.io/chamdakhoahoc/">
 
     <meta property="og:title" content="Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới">
-    <meta property="og:description" content="Chia sẻ kiến thức chăm sóc da khoa học, routine đơn giản, hiệu quả lâu dài.">
+    <meta property="og:description"
+          content="Chia sẻ kiến thức chăm sóc da khoa học, routine đơn giản, hiệu quả lâu dài.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nhom8tuhcctk.github.io/cham-da-khoa-hoc/">
-    <meta property="og:image" content="https://nhom8tuhcctk.github.io/cham-da-khoa-hoc/image/skin-barrier.jpg">
+    <meta property="og:url" content="https://nhom8tuhcctk.github.io/chamdakhoahoc/">
+    <meta property="og:image" content="https://nhom8tuhcctk.github.io/chamdakhoahoc/image/skin-barrier.jpg">
 
     <style>
-        /* GIỮ NGUYÊN CSS NHƯ CŨ */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
         body { background: #fff9fb; color: #333; }
         header { background: #ff99c8; }
