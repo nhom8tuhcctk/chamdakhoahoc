@@ -2,8 +2,8 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNR6VPYE71"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -11,25 +11,23 @@
         gtag('js', new Date());
         gtag('config', 'G-GNR6VPYE71');
     </script>
-
-    <!-- SEO -->
     <title>Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới</title>
+    
     <meta name="description"
-          content="Chăm Da Khoa Học chia sẻ kiến thức chăm sóc da cơ bản, routine tối giản và hàng rào bảo vệ da dựa trên nghiên cứu khoa học.">
+          content="Chăm Da Khoa Học chia sẻ kiến thức chăm sóc da cơ bản, routine tối giản và hàng rào bảo vệ da chuẩn y khoa. Hướng dẫn người mới bắt đầu chăm da hiệu quả.">
+    
     <meta name="keywords"
-          content="chăm da khoa học, chăm sóc da cơ bản, routine skincare, hàng rào bảo vệ da">
+          content="chăm da khoa học, chăm sóc da cơ bản, routine skincare, hàng rào bảo vệ da, kiến thức skincare">
     <meta name="author" content="Nhóm 8 – Chăm Da Khoa Học">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Canonical -->
+    
     <link rel="canonical" href="https://nhom8tuhcctk.github.io/chamdakhoahoc/">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Chăm Da Khoa Học – Kiến Thức Skincare Cho Người Mới">
     <meta property="og:description"
           content="Chia sẻ kiến thức chăm sóc da khoa học, routine đơn giản, hiệu quả lâu dài.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nhom8tuhcctk.github.io/chamdakhoahoc/">
+    <meta property="og:image" content="https://nhom8tuhcctk.github.io/chamdakhoahoc/image/skin-barrier.jpg">
 
     <style>
         * {
@@ -149,11 +147,12 @@
         .card p {
             font-size: 0.95rem;
             line-height: 1.6;
+            margin-bottom: 12px; /* Thêm margin để nút không dính sát */
         }
 
         .card a {
             display: inline-block;
-            margin-top: 12px;
+            margin-top: auto; /* Đẩy nút xuống dưới cùng nếu card cao */
             padding: 7px 16px;
             background: #ff84b7;
             color: #fff;
@@ -197,11 +196,11 @@
     <div class="header-inner">
         <div class="logo">Chăm Da Khoa Học</div>
         <nav class="main-nav">
-            <a href="index.html" class="active">Trang chủ</a>
-            <a href="basic.html">Cơ bản</a>
-            <a href="routine.html">Routine</a>
-            <a href="ingredients.html">Thành phần</a>
-            <a href="contact.html">Liên hệ</a>
+            <a href="index.html" class="active" title="Trang chủ Chăm Da Khoa Học">Trang chủ</a>
+            <a href="basic.html" title="Kiến thức chăm sóc da cơ bản">Cơ bản</a>
+            <a href="routine.html" title="Xây dựng routine chăm sóc da">Routine</a>
+            <a href="ingredients.html" title="Tìm hiểu thành phần mỹ phẩm">Thành phần</a>
+            <a href="contact.html" title="Liên hệ với chúng tôi">Liên hệ</a>
         </nav>
     </div>
 </header>
@@ -216,30 +215,31 @@
     </div>
 
     <img src="image/skin-barrier.jpg"
-         alt="Minh họa hàng rào bảo vệ da – skin barrier"
+         alt="Chăm sóc da khoa học - Minh họa hàng rào bảo vệ da skin barrier"
+         width="500" height="200"
          loading="lazy">
 </section>
 
 <main>
-    <h2>Chuyên mục nổi bật</h2>
+    <h2>Chuyên mục chăm da nổi bật</h2>
 
     <div class="card-list">
         <div class="card">
             <h3>Chăm sóc da cơ bản</h3>
             <p>Kiến thức nền tảng cho người mới bắt đầu chăm sóc da.</p>
-            <a href="basic.html">Xem chuyên mục</a>
+            <a href="basic.html" title="Xem chuyên mục chăm sóc da cơ bản">Xem chuyên mục</a>
         </div>
 
         <div class="card">
             <h3>Routine chăm sóc da</h3>
             <p>Gợi ý routine sáng – tối đơn giản, dễ áp dụng.</p>
-            <a href="routine.html">Xem routine</a>
+            <a href="routine.html" title="Xem routine mẫu">Xem routine</a>
         </div>
 
         <div class="card">
             <h3>Thành phần skincare</h3>
             <p>Giải thích các hoạt chất phổ biến một cách dễ hiểu.</p>
-            <a href="ingredients.html">Tìm hiểu thêm</a>
+            <a href="ingredients.html" title="Tìm hiểu thành phần skincare">Tìm hiểu thêm</a>
         </div>
     </div>
 </main>
