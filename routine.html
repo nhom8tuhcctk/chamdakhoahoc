@@ -66,7 +66,165 @@
       }]
     }
     </script>
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
 
+        body {
+            background: #fff9fb;
+            color: #333;
+        }
+
+        header {
+            background: #ff99c8;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 22px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            color: #c2185b;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+        }
+
+        main h2 {
+            color: #c2185b;
+            margin-bottom: 16px;
+            font-size: 1.5rem;
+        }
+
+        .card-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 22px;
+            border-radius: 18px;
+            border: 1px solid #ffd1e6;
+        }
+
+        .card h3 {
+            color: #d81b60;
+            margin-bottom: 6px;
+            font-size: 1.1rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 12px; /* Thêm margin để nút không dính sát */
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: auto; /* Đẩy nút xuống dưới cùng nếu card cao */
+            padding: 7px 16px;
+            background: #ff84b7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 999px;
+            font-size: 0.9rem;
+        }
+
+        .card a:hover {
+            background: #ff5fa1;
+        }
+
+        footer {
+            background: #ff99c8;
+            color: #fff;
+            text-align: center;
+            padding: 14px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero img {
+                height: 180px;
+            }
+
+            .main-nav {
+                justify-content: center;
+            }
+        }
+    </style>
     <!-- CSS -->
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Arial,sans-serif}
